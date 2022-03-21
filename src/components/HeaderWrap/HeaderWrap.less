@@ -1,0 +1,70 @@
+//定义变量
+@head-color: #ff552e;
+
+#header-wrap.header-wrap{
+    margin-top: 20PX;
+}
+
+.header-wrap {
+    margin: 27PX auto 0PX auto;
+    width: 1190PX;
+    height: 90PX;
+
+    .logo {
+        width: 214PX;
+        height: 42PX;
+        margin: 0 0 6PX;
+        background: url("//img.58cdn.com.cn/ui8/house/detail/images/new58logo.png") no-repeat;
+        background-image: -webkit-image-set(url(//img.58cdn.com.cn/ui8/house/detail/images/new58logo.png) 1x, url(//img.58cdn.com.cn/ui8/house/detail/images/new58logo@2x.png) 2x);
+    }
+
+    .fl {
+        float: left;
+    }
+
+    .fr {
+        float: right;
+    }
+
+    .clearfix {
+        zoom: 1;
+    }
+    .hotKey {
+        position: absolute;
+        top: 52PX;
+        left: 0;
+
+        li {
+            float: left;
+            padding-right: 20PX;
+
+            a {
+                color: #999;
+                font-size: 12PX;
+            }
+        }
+    }
+
+    .top-publish-news {
+        width: 100PX;
+        height: 46PX;
+        color: @head-color;
+        background: #ffefe7;
+        line-height: 46PX;
+        text-align: center;
+        font-size: 16PX;
+
+        &:hover {
+            background: #ffe9de;
+        }
+    }
+
+    .nav-top-bar {
+        width: 100%;
+        line-height: 42PX;
+        color: #888;
+        a {
+            color: #888;
+        }
+    }
+}

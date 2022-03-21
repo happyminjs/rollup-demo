@@ -1,0 +1,4316 @@
+body {
+  background: #fff;
+  line-height: 1;
+}
+body .wx-xcx-qrcode {
+  z-index: 0;
+}
+body #rightSideBar {
+  z-index: 0;
+}
+#webimIframe {
+  z-index: 4 !important;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.lh20 {
+  line-height: 20PX;
+}
+.lh30 {
+  line-height: 30PX;
+}
+.clear {
+  clear: both;
+}
+.pr {
+  position: relative;
+}
+.pa {
+  position: absolute;
+}
+.f12 {
+  font-size: 12PX;
+}
+.f14 {
+  font-size: 14PX;
+}
+.f16 {
+  font-size: 16PX;
+}
+.f18 {
+  font-size: 18PX;
+}
+.f20 {
+  font-size: 20PX;
+}
+.f36 {
+  font-size: 36PX;
+}
+.c_333 {
+  color: #333;
+}
+.c_555 {
+  color: #555;
+}
+.c_ff552e {
+  color: #ff552e;
+}
+.c_888 {
+  color: #888;
+}
+.c_0091d7 {
+  color: #0091d7;
+}
+.c_000 {
+  color: #000;
+}
+.mr_15 {
+  margin-right: 15PX;
+}
+.header-wrap,
+.main-wrap,
+.footer-wrap {
+  width: 1190PX;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.main-wrap {
+  margin-top: 5PX;
+}
+img {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.icon {
+  display: inline-block;
+  position: absolute;
+  width: 16PX;
+  height: 30PX;
+  background: url(//pic8.58cdn.com.cn/nowater/fangfe/n_v2432cb783174d485286f9388643d966ff.png) no-repeat center;
+  background-size: auto 80PX;
+}
+.strongbox {
+  font-family: 'fangchan-secret', 'Hiragino Sans GB', 'Microsoft yahei', Arial, sans-serif, '宋体' !important;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .icon {
+    background-image: url(//img.58cdn.com.cn/ui8/house/detail/images/zufang-detail-icon@2x.png);
+    background-size: auto 80PX;
+  }
+}
+@-webkit-keyframes rotateOut {
+  0% {
+    -webkit-transform-origin: bottom center;
+    transform-origin: bottom center;
+  }
+  100% {
+    -webkit-transform-origin: bottom center;
+    transform-origin: bottom center;
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+@keyframes rotateOut {
+  0% {
+    -webkit-transform-origin: bottom center;
+    transform-origin: bottom center;
+  }
+  100% {
+    -webkit-transform-origin: bottom center;
+    transform-origin: bottom center;
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+@-webkit-keyframes rotateIn {
+  0% {
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-transform: rotate3d(0, 0, 1, -360deg);
+    transform: rotate3d(0, 0, 1, -360deg);
+  }
+}
+@keyframes rotateIn {
+  0% {
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-transform: rotate3d(0, 0, 1, -360deg);
+    transform: rotate3d(0, 0, 1, -360deg);
+  }
+}
+/* 住建委核验码 */
+.zhujianwei-code {
+  background: #fff;
+  padding: 30PX 0;
+}
+.zhujianwei-code .platform-check-pass {
+  padding: 20PX 0;
+  font-size: 14PX;
+  color: #333;
+  width: 100%;
+  overflow: hidden;
+}
+.zhujianwei-code .platform-check-pass .official-icon {
+  float: left;
+}
+.zhujianwei-code .platform-check-pass .official-icon .icon-code {
+  width: 77PX;
+  height: 18PX;
+}
+.zhujianwei-code .platform-check-pass .item-desc {
+  float: left;
+  height: 18PX;
+  line-height: 19PX;
+  margin-left: 20PX;
+}
+.zhujianwei-code .official-check .pass .official-check-icon {
+  float: left;
+  display: block;
+  margin-right: 15PX;
+  margin-top: 5PX;
+  width: 77PX;
+  height: 18PX;
+  background: url('https://pic6.58cdn.com.cn/nowater/fangfe/n_v296cea6e3124d4719b007ae4493f30b12.png');
+}
+.zhujianwei-code .official-check .pass .detail {
+  width: 612PX;
+  float: left;
+  font-size: 14PX;
+  color: #555;
+  line-height: 30PX;
+}
+.zhujianwei-code .official-check .pass .detail .code-wrap {
+  position: relative;
+  cursor: pointer;
+}
+.zhujianwei-code .official-check .pass .detail .code-wrap .qrcode-popover {
+  display: none;
+  position: absolute;
+  right: -151PX;
+  bottom: -75PX;
+  border: 1PX solid #D2D2D2;
+  background-color: #fff;
+  text-align: center;
+  padding: 18PX 18PX 12PX;
+}
+.zhujianwei-code .official-check .pass .detail .code-wrap .qrcode-popover img {
+  width: 100PX;
+  height: 100PX;
+}
+.zhujianwei-code .official-check .pass .detail .code-wrap .qrcode-popover p {
+  height: 20PX;
+  line-height: 20PX;
+  margin-top: 10PX;
+  font-size: 12PX;
+  color: #666;
+}
+.zhujianwei-code .official-check .pass .detail .code-wrap .qrcode-popover .r_jiao {
+  width: 21PX;
+  height: 17PX;
+  top: 65PX;
+  left: -9PX;
+  background-position: -1680PX 0;
+  background-image: url(//img.58cdn.com.cn/ui8/house/detail/images/zufang-detail-icon@2x.png);
+  background-size: auto 80PX;
+  position: absolute;
+  display: inline-block;
+  transform: rotate(-90deg);
+  margin-right: 30PX;
+}
+.zhujianwei-code .official-check .pass .detail .code-wrap:hover .qrcode-popover {
+  display: block;
+}
+.zhujianwei-code .official-check .no-pass .official-check-icon {
+  float: left;
+  display: block;
+  margin-right: 15PX;
+  margin-top: 5PX;
+  width: 77PX;
+  height: 18PX;
+  background: url(//pic6.58cdn.com.cn/nowater/fangfe/n_v24a366bd1f0854fc1a4c5e0619c352359.png) no-repeat;
+  background-size: contain;
+}
+.zhujianwei-code .official-check .no-pass .detail {
+  width: 612PX;
+  float: left;
+  font-size: 14PX;
+  color: #555;
+  line-height: 30PX;
+}
+.zhujianwei-code .record-wrap .pass .code-item,
+.zhujianwei-code .record-wrap .no-pass .code-item {
+  width: 100%;
+  margin-bottom: 16PX;
+}
+.zhujianwei-code .record-wrap .pass .code-item:last-child,
+.zhujianwei-code .record-wrap .no-pass .code-item:last-child {
+  margin-bottom: 0;
+}
+.zhujianwei-code .record-wrap .pass .code-item .code-pic,
+.zhujianwei-code .record-wrap .no-pass .code-item .code-pic,
+.zhujianwei-code .record-wrap .pass .code-item .code-label,
+.zhujianwei-code .record-wrap .no-pass .code-item .code-label {
+  display: inline-block;
+  vertical-align: top;
+}
+.zhujianwei-code .record-wrap .pass .code-item .code-pic,
+.zhujianwei-code .record-wrap .no-pass .code-item .code-pic {
+  width: 72PX;
+  height: 18PX;
+  margin-right: 17PX;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.zhujianwei-code .record-wrap .pass .code-item .code-pic.jigou,
+.zhujianwei-code .record-wrap .no-pass .code-item .code-pic.jigou {
+  background-image: url(//pic1.58cdn.com.cn/nowater/fangfe/n_v2ad1355debf5f4267aaf1612cff6d22ea.png);
+}
+.zhujianwei-code .record-wrap .pass .code-item .code-pic.jigou.no,
+.zhujianwei-code .record-wrap .no-pass .code-item .code-pic.jigou.no {
+  background-image: url(//pic4.58cdn.com.cn/nowater/fangfe/n_v2831b4535ae594735be9d8a0fcda80955.png);
+}
+.zhujianwei-code .record-wrap .pass .code-item .code-pic.congye,
+.zhujianwei-code .record-wrap .no-pass .code-item .code-pic.congye {
+  background-image: url(//pic5.58cdn.com.cn/nowater/fangfe/n_v2dd0ae7503aba44dc86a3bfa781144025.png);
+}
+.zhujianwei-code .record-wrap .pass .code-item .code-pic.congye.no,
+.zhujianwei-code .record-wrap .no-pass .code-item .code-pic.congye.no {
+  background-image: url(//pic4.58cdn.com.cn/nowater/fangfe/n_v242675c21064d4594972cebcaf931bdf8.png);
+}
+.zhujianwei-code .record-wrap .pass .code-item .code-pic.house,
+.zhujianwei-code .record-wrap .no-pass .code-item .code-pic.house {
+  background-image: url(//pic3.58cdn.com.cn/nowater/fangfe/n_v2d38ecdb87acd4000bdd5fc4cf35b4872.png);
+}
+.zhujianwei-code .record-wrap .pass .code-item .code-pic.house.no,
+.zhujianwei-code .record-wrap .no-pass .code-item .code-pic.house.no {
+  background-image: url(//pic1.58cdn.com.cn/nowater/fangfe/n_v2216f787efcd04b41af5b444c91308911.png);
+}
+.zhujianwei-code .record-wrap .pass .code-item .code-label,
+.zhujianwei-code .record-wrap .no-pass .code-item .code-label {
+  font-size: 14PX;
+}
+.zhujianwei-code .record-wrap .pass .code-item .code-label .title,
+.zhujianwei-code .record-wrap .no-pass .code-item .code-label .title {
+  color: #333333;
+  font-family: 'PingFangSC-Medium' !important;
+  line-height: 18PX;
+}
+.zhujianwei-code .record-wrap .pass .code-item .code-label .tips,
+.zhujianwei-code .record-wrap .no-pass .code-item .code-label .tips {
+  color: #43474d;
+  font-family: PingFangSC-Regular !important;
+  line-height: 18PX;
+  margin-top: 6PX;
+  position: relative;
+  width: fit-content;
+}
+.zhujianwei-code .record-wrap .pass .code-item .code-label .tips .qrcode-popover,
+.zhujianwei-code .record-wrap .no-pass .code-item .code-label .tips .qrcode-popover {
+  display: none;
+  position: absolute;
+  right: -151PX;
+  bottom: -75PX;
+  border: 1PX solid #D2D2D2;
+  background-color: #fff;
+  text-align: center;
+  padding: 18PX 18PX 12PX;
+  z-index: 2;
+}
+.zhujianwei-code .record-wrap .pass .code-item .code-label .tips .qrcode-popover img,
+.zhujianwei-code .record-wrap .no-pass .code-item .code-label .tips .qrcode-popover img {
+  width: 100PX;
+  height: 100PX;
+}
+.zhujianwei-code .record-wrap .pass .code-item .code-label .tips .qrcode-popover p,
+.zhujianwei-code .record-wrap .no-pass .code-item .code-label .tips .qrcode-popover p {
+  height: 20PX;
+  line-height: 20PX;
+  margin-top: 10PX;
+  font-size: 12PX;
+  color: #666;
+}
+.zhujianwei-code .record-wrap .pass .code-item .code-label .tips .qrcode-popover .r_jiao,
+.zhujianwei-code .record-wrap .no-pass .code-item .code-label .tips .qrcode-popover .r_jiao {
+  width: 21PX;
+  height: 17PX;
+  top: 65PX;
+  left: -9PX;
+  background-position: -1680PX 0;
+  background-image: url(//img.58cdn.com.cn/ui8/house/detail/images/zufang-detail-icon@2x.png);
+  background-size: auto 80PX;
+  position: absolute;
+  display: inline-block;
+  transform: rotate(-90deg);
+  margin-right: 30PX;
+}
+.zhujianwei-code .record-wrap .pass .code-item .code-label .tips span.active,
+.zhujianwei-code .record-wrap .no-pass .code-item .code-label .tips span.active {
+  color: #257AC0;
+}
+.zhujianwei-code .record-wrap .pass .code-item .code-label .tips:hover .qrcode-popover,
+.zhujianwei-code .record-wrap .no-pass .code-item .code-label .tips:hover .qrcode-popover {
+  display: block;
+}
+.guess-your-service {
+  margin-top: 60PX;
+}
+.guess-your-service .service-list {
+  overflow: hidden;
+  margin-top: 20PX;
+}
+.guess-your-service .service-list a {
+  display: block;
+  float: left;
+  width: 328PX;
+  height: 104PX;
+  padding-top: 16PX;
+  padding-left: 20PX;
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  opacity: 1;
+}
+.guess-your-service .service-list a .rjj .icon {
+  margin-bottom: -2PX;
+  width: 10PX;
+  height: 13PX;
+  position: relative;
+  background-position: -1963PX 0;
+  background-image: url(//img.58cdn.com.cn/ui8/house/detail/images/zufang-detail-icon@2x.png);
+  background-size: auto 80PX;
+}
+.guess-your-service .service-list .move-house {
+  background: #fff url(//img.58cdn.com.cn/ui8/house/detail/images/movehouse.png) no-repeat center;
+  background-image: -webkit-image-set(url(//img.58cdn.com.cn/ui8/house/detail/images/movehouse.png) 1x, url(//img.58cdn.com.cn/ui8/house/detail/images/movehouse@2x.png) 2x);
+}
+.guess-your-service .service-list .first {
+  margin-right: 10PX;
+}
+.guess-your-service .service-list .first:hover {
+  margin-right: 10PX;
+  opacity: 0.8;
+}
+.guess-your-service .service-list .keep-clean {
+  background: #fff url(//img.58cdn.com.cn/ui8/house/detail/images/cleanservice.png) no-repeat center;
+  background-image: -webkit-image-set(url(//img.58cdn.com.cn/ui8/house/detail/images/cleanservice.png) 1x, url(//img.58cdn.com.cn/ui8/house/detail/images/cleanservice@2x.png) 2x);
+}
+.guess-your-service .service-list .keep-clean:hover {
+  opacity: 0.8;
+}
+.agent-aggregation {
+  margin-top: 60PX;
+  padding-bottom: 60PX;
+}
+.agent-aggregation .title {
+  width: 100%;
+  color: #333;
+  font-size: 18PX;
+  position: relative;
+}
+.agent-aggregation .title a.more {
+  position: absolute;
+  right: 0;
+  color: #0091D7;
+  font-size: 14PX;
+  background: url('../../assets/btn_aarow_58_pc@2x.png');
+  background-size: 12PX 12PX;
+  background-position: 56PX 1PX;
+  background-repeat: no-repeat;
+  padding-right: 10PX;
+}
+.agent-aggregation ul li {
+  margin: 30PX 0;
+}
+.agent-aggregation ul li .empty {
+  clear: both;
+}
+.agent-aggregation ul li .left {
+  float: left;
+}
+.agent-aggregation ul li .left .head {
+  width: 70PX;
+  height: 70PX;
+  border-radius: 35PX;
+  background: red;
+  float: left;
+}
+.agent-aggregation ul li .left .infor {
+  margin-left: 10PX;
+  float: left;
+  margin-top: 5PX;
+}
+.agent-aggregation ul li .left .infor .name {
+  color: #333;
+  font-size: 18PX;
+  position: relative;
+}
+.agent-aggregation ul li .left .infor .name .active-tag {
+  width: 68PX;
+  height: 17PX;
+  background: #FFEEEA;
+  color: #FF552E;
+  border-radius: 2PX;
+  display: inline-block;
+  text-align: center;
+  line-height: 17PX;
+  font-size: 12PX;
+  margin-left: 3PX;
+  position: absolute;
+}
+.agent-aggregation ul li .left .infor .agent-icon {
+  margin: 5PX 0 7PX;
+}
+.agent-aggregation ul li .left .infor .agent-icon .icon {
+  background: url(//pic8.58cdn.com.cn/nowater/fangfe/n_v2432cb783174d485286f9388643d966ff.png) no-repeat center;
+  background-size: auto 80PX;
+}
+.agent-aggregation ul li .left .infor .agent-icon i {
+  position: relative;
+  width: 24PX;
+  height: 17PX;
+  bottom: -4PX;
+  margin-left: -2PX;
+}
+.agent-aggregation ul li .left .infor .agent-icon .pho-approve {
+  width: 15PX;
+  background-position: -2443PX 0;
+}
+.agent-aggregation ul li .left .infor .agent-icon .single-approve {
+  width: 22PX;
+  background-position: -2466PX 0;
+}
+.agent-aggregation ul li .left .infor .agent-icon .license-approve {
+  width: 22PX;
+  background-position: -2497PX 0;
+}
+.agent-aggregation ul li .left .infor .agent-icon .mail-approve {
+  width: 22PX;
+  background-position: -2529PX 0;
+}
+.agent-aggregation ul li .left .infor .card-store {
+  width: 330px;
+}
+.agent-aggregation ul li .left .infor .card-store .employment-card {
+  font-size: 12PX;
+  cursor: pointer;
+  margin-right: 5PX;
+  background: url(https://pic4.58cdn.com.cn/nowater/fangfe/n_v29e2c5cff6d3c4b9185b54cfc22d7e6a0.png);
+  padding-left: 22PX;
+  background-size: 18PX 14PX;
+  background-position: 1PX 1PX;
+  background-repeat: no-repeat;
+  height: 20PX;
+  position: relative;
+  background: none \9;
+  line-height: 16PX;
+  display: inline;
+  color: #999;
+}
+.agent-aggregation ul li .left .infor .card-store .employment-card .name {
+  font-size: 12PX;
+}
+.agent-aggregation ul li .left .infor .card-store .employment-card .agent-img-pop-wrapper {
+  display: none;
+  position: absolute;
+  top: 14PX;
+  z-index: 9999;
+  padding-top: 10PX;
+}
+.agent-aggregation ul li .left .infor .card-store .employment-card .agent-img-pop-wrapper .agent-img-pop {
+  display: inline-block;
+  padding: 17PX 10PX;
+  border-radius: 10PX;
+  width: 220PX;
+  height: 283PX;
+  background: #fff;
+  box-shadow: 0 0 5PX 0 rgba(0, 0, 0, 0.25);
+  border: 1PX solid #f2f4f6;
+}
+.agent-aggregation ul li .left .infor .card-store .employment-card .agent-img-pop-wrapper .agent-img-pop .img {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.agent-aggregation ul li .left .infor .card-store .employment-card .name,
+.agent-aggregation ul li .left .infor .card-store .employment-card .value {
+  color: #999;
+  vertical-align: middle;
+  height: 20PX;
+  line-height: 18PX;
+}
+.agent-aggregation ul li .left .infor .card-store .employment-card .agent-img-pop-wrapper {
+  left: -76PX !important;
+}
+.agent-aggregation ul li .left .infor .card-store .employment-card:hover .agent-img-pop-wrapper {
+  display: block;
+}
+.agent-aggregation ul li .left .infor .card-store .agent-store {
+  font-size: 12PX;
+  cursor: pointer;
+  margin-right: 5PX;
+  background: url(https://pic2.58cdn.com.cn/nowater/fangfe/n_v287d710da4e624314972a85032cc0d460.png);
+  padding-left: 22PX;
+  background-size: 18PX 14PX;
+  background-position: 1PX 1PX;
+  background-repeat: no-repeat;
+  height: 20PX;
+  position: relative;
+  background: none \9;
+  line-height: 16PX;
+  display: inline;
+}
+.agent-aggregation ul li .left .infor .card-store .agent-store a {
+  font-size: 12PX;
+  color: #999;
+}
+.agent-aggregation ul li .left .infor .card-store .employment-record-num {
+  font-size: 12PX;
+  cursor: pointer;
+  margin-right: 5PX;
+  position: relative;
+  background: none \9;
+  line-height: 16PX;
+  display: inline;
+  color: #999 !important;
+}
+.agent-aggregation ul li .left .infor .card-store .employment-record-num .name {
+  padding-left: 22PX;
+  background: url(https://pic3.58cdn.com.cn/nowater/fangfe/n_v2346b4d130e0d489f912f93dfa081b23a.png);
+  background-size: 18PX 14PX;
+  background-position: 1PX 1PX;
+  background-repeat: no-repeat;
+  font-size: 12PX !important;
+  color: #999 !important;
+}
+.agent-aggregation ul li .left .infor .card-store .employment-record-num .name span.active {
+  color: #257AC0 !important;
+}
+.agent-aggregation ul li .left .infor .card-store .employment-record-num .qr-code-wrap {
+  display: none;
+  z-index: 11;
+  width: 120PX;
+  position: absolute;
+  top: 18PX;
+  right: -70PX;
+  padding: 10PX;
+  background: #FFF;
+  border: 1PX solid #D2D2D2;
+}
+.agent-aggregation ul li .left .infor .card-store .employment-record-num .qr-code-wrap .code {
+  width: 100PX;
+  height: 100PX;
+  display: inline-block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-left: 10PX;
+}
+.agent-aggregation ul li .left .infor .card-store .employment-record-num .qr-code-wrap .word {
+  font-size: 12PX;
+  color: #9B9B9B;
+  text-align: center;
+}
+.agent-aggregation ul li .left .infor .card-store .employment-record-num .qr-code-wrap .jianjiao {
+  width: 22PX;
+  height: 17PX;
+  top: -7PX;
+  right: 57PX;
+  background-position: -1680PX 0;
+}
+.agent-aggregation ul li .left .infor .card-store .employment-record-num:hover .qr-code-wrap {
+  display: block;
+}
+.agent-aggregation ul li .right {
+  float: right;
+  margin-top: 9PX;
+}
+.agent-aggregation ul li .right .btn-im {
+  width: 40PX;
+  height: 44PX;
+  background-color: #F4F6F6;
+  float: right;
+  color: #21B2EE;
+  font-size: 16PX;
+  line-height: 44PX;
+  padding-left: 36PX;
+  font-weight: 500;
+  background-image: url('../../assets/chat@2x.png');
+  background-size: 22PX 22PX;
+  background-repeat: no-repeat;
+  background-position: 9PX 12PX;
+  margin-left: 10PX;
+  cursor: pointer;
+}
+.agent-aggregation ul li .right .btn-phone {
+  width: 194PX;
+  height: 44PX;
+  overflow: hidden;
+  cursor: pointer;
+}
+.agent-aggregation ul li .right .btn-phone .phone-icon {
+  width: 40PX;
+  height: 44PX;
+  float: left;
+  background-color: #FF552E;
+  background-image: url('../../assets/call@2x.png');
+  background-size: 22PX 22PX;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.agent-aggregation ul li .right .btn-phone .phone-phone {
+  width: 154PX;
+  height: 44PX;
+  float: left;
+  background: rgba(255, 85, 46, 0.9);
+  color: #fff;
+  font-size: 16PX;
+  line-height: 44PX;
+  text-align: center;
+  font-weight: 500;
+}
+.house-title {
+  z-index: 5;
+  position: relative;
+  padding-top: 4PX;
+}
+.house-title h1 {
+  font-weight: 400;
+  width: 940PX;
+  line-height: 24PX;
+}
+.house-title .house-update-info {
+  margin-top: 10PX;
+  margin-bottom: 19PX;
+  line-height: 18PX;
+}
+.house-title .house-update-info em,
+.house-title .house-update-info i {
+  font-style: normal;
+}
+.house-title .house-update-info .cd-official-check {
+  margin-right: 20px;
+  position: relative;
+}
+.house-title .house-update-info .cd-official-check .cd-hy-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 38%;
+  padding: 4px 6px;
+}
+.house-title .house-update-info .cd-official-check .cd-hy-box .cd-txt {
+  cursor: pointer;
+  font-size: 12PX;
+  color: #fff;
+}
+.house-title .house-update-info .cd-official-check .qrcode-popover {
+  position: absolute;
+  display: none;
+  padding: 12px;
+  padding-bottom: 10PX;
+  background-color: #FFF;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 7px 0px;
+  border-radius: 8PX;
+  top: 25PX;
+  left: 10px;
+  text-align: center;
+}
+.house-title .house-update-info .cd-official-check .qrcode-popover.has-ewm .zf-href {
+  text-align: center;
+  margin-top: 10px;
+}
+.house-title .house-update-info .cd-official-check .qrcode-popover img {
+  width: 92px;
+  height: 92px;
+  margin-bottom: 4px;
+}
+.house-title .house-update-info .cd-official-check .qrcode-popover span {
+  display: block;
+  color: #333;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+}
+.house-title .house-update-info .cd-official-check .qrcode-popover .zf-href {
+  width: 256px;
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #333;
+  text-align: left;
+  cursor: pointer;
+}
+.house-title .house-update-info .cd-official-check .qrcode-popover .r_jiao {
+  position: absolute;
+  box-shadow: 2px -2px 4px -2px rgba(0, 0, 0, 0.14);
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  transform: rotate(-45deg);
+  top: -4px;
+  left: 50%;
+  margin-left: -4px;
+}
+.house-title .title-right-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  padding-top: 7PX;
+}
+.house-title .title-right-info a {
+  float: left;
+  padding-top: 26PX;
+  display: block;
+}
+.house-title .title-right-info a i {
+  width: 24PX;
+  height: 16PX;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-position: -965PX 0;
+}
+.house-title .title-right-info .richscan-house {
+  z-index: 12;
+  margin-right: 16PX;
+  margin-left: 31PX;
+}
+.house-title .title-right-info .richscan-house i {
+  top: 0;
+  width: 27PX;
+  height: 15PX;
+  background-position: -895PX 0;
+}
+.house-title .title-right-info .see-by-phone i {
+  top: 0;
+  width: 10PX;
+  left: 23PX;
+  height: 15PX;
+  background-position: -414PX 0;
+}
+.house-title .title-right-info .see-by-phone .icon {
+  background-size: auto 80PX;
+}
+.house-title .title-right-info #report {
+  margin-left: 20PX;
+  width: 30PX;
+  height: 48PX;
+  padding-top: 29PX;
+  margin-top: -3PX;
+}
+.house-title .title-right-info #report i {
+  background: url(//pic8.58cdn.com.cn/nowater/fangfe/n_v2432cb783174d485286f9388643d966ff.png) no-repeat center;
+  width: 24PX;
+  height: 28PX;
+  background-position: -551PX 6PX;
+  top: -5PX;
+}
+.house-title .title-right-info #report:hover {
+  color: #ff552e;
+}
+.house-title .title-right-info #gaq_phone i.icon {
+  margin-left: 0PX;
+}
+.house-title .title-right-info #gaq_phone:hover {
+  color: #ff552e;
+}
+.house-title .title-right-info #gaq_phone:hover i.icon {
+  background-position: -1384PX 0;
+}
+.house-title .title-right-info .collect-house:hover .icon {
+  background-position: -1425PX 0;
+}
+.house-title .title-right-info .collect-house:hover span {
+  color: #ff552e;
+}
+.house-title .title-right-info #manage {
+  margin-right: 32PX;
+}
+.house-title .title-right-info #manage i {
+  width: 24PX;
+  height: 16PX;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-position: -1905PX 0;
+}
+.house-title .title-right-info .contract-download {
+  color: #888;
+  font-size: 12PX;
+  cursor: pointer;
+  position: relative;
+  margin-right: 32PX;
+}
+.house-title .title-right-info .contract-download i {
+  width: 24PX;
+  height: 16PX;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: url('https://pic4.58cdn.com.cn/nowater/fangfe/n_v256b0d441613c44adb5a83a365e4c8f35.png');
+  background-size: 18PX 16PX;
+  background-repeat: no-repeat;
+  background-position: 4PX 0PX;
+}
+.house-title .title-right-info .contract-download:hover {
+  color: #FF552E;
+}
+.house-title .title-right-info .on .icon {
+  background-position: center!important;
+  background-size: contain;
+  background-image: url(//img.58cdn.com.cn/fangrs/img/8a78b8d382990144be912da0cded664e.png);
+}
+.house-title .title-right-info .on span {
+  color: #888;
+}
+.house-title .title-right-info .richscan-house:hover {
+  color: #ff552e;
+}
+.house-title .title-right-info .richscan-house:hover .icon {
+  background-position: -1399PX 0;
+}
+.house-title .richscan-wrap {
+  display: none;
+  z-index: 11;
+  width: 120PX;
+  position: absolute;
+  top: 60PX;
+  right: 8PX;
+  padding: 20PX 10PX;
+  background: #FFF;
+  border: 1PX solid #D2D2D2;
+}
+.house-title .richscan-wrap .code {
+  margin: 0 auto;
+  width: 100PX;
+  height: 100PX;
+  margin-bottom: 10PX;
+}
+.house-title .richscan-wrap .word {
+  font-size: 12PX;
+  color: #9B9B9B;
+  text-align: center;
+}
+.house-title .richscan-wrap .jianjiao {
+  width: 22PX;
+  height: 17PX;
+  top: -7PX;
+  right: 57PX;
+  background-position: -1680PX 0;
+}
+.house-title .manage-wrap {
+  display: none;
+  z-index: 11;
+  position: absolute;
+  top: 57PX;
+  right: 225PX;
+  width: 110PX;
+  height: 112PX;
+  padding: 9PX 0 18PX 0;
+  background: #FFF;
+  border: 1PX solid #D2D2D2;
+}
+.house-title .manage-wrap .jianjiao {
+  width: 22PX;
+  height: 17PX;
+  top: -7PX;
+  right: 42PX;
+  background-position: -1680PX 0;
+  position: absolute;
+  display: inline-block;
+}
+.house-title .manage-wrap a {
+  display: block;
+  text-align: center;
+  font-size: 12PX;
+  color: #888;
+  line-height: 28PX;
+}
+.iframe-wrap {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  padding: 18% 30%;
+  z-index: 12;
+}
+.iframe-wrap .title {
+  line-height: 45PX;
+  width: 550PX;
+  background: #eee;
+  padding-left: 20PX;
+  color: #333;
+  position: relative;
+}
+.iframe-wrap .title span {
+  position: absolute;
+  width: 18PX;
+  height: 18PX;
+  background: red;
+  top: 0;
+  right: 0;
+  background: url(//img.58cdn.com.cn/ui7/detail/img/fe_window_bg.png) no-repeat 0 -35PX;
+  margin: 13PX;
+}
+#report-bar {
+  display: none;
+  position: absolute;
+  top: -370PX;
+  right: 0;
+  z-index: 9;
+  width: 110PX;
+  height: 84PX;
+  padding: 9PX 0 18PX 0;
+  background: #FFF;
+  border: 1PX solid #D2D2D2;
+}
+#report-bar .jianjiao {
+  width: 22PX;
+  height: 17PX;
+  top: -7PX;
+  right: 0;
+  background-position: -1680PX 0;
+}
+#report-bar a {
+  display: block;
+  padding-left: 20PX;
+  font-size: 12PX;
+  color: #888;
+  line-height: 28PX;
+}
+#report-bar a:hover {
+  background: #F8F8F8;
+}
+#manage-bar a:hover {
+  background: #F8F8F8;
+}
+#header-wrap.header-wrap {
+  margin-top: 20PX;
+}
+.header-wrap {
+  margin: 27PX auto 0PX auto;
+  width: 1190PX;
+  height: 90PX;
+}
+.header-wrap .logo {
+  width: 214PX;
+  height: 42PX;
+  margin: 0 0 6PX;
+  background: url("//img.58cdn.com.cn/ui8/house/detail/images/new58logo.png") no-repeat;
+  background-image: -webkit-image-set(url(//img.58cdn.com.cn/ui8/house/detail/images/new58logo.png) 1x, url(//img.58cdn.com.cn/ui8/house/detail/images/new58logo@2x.png) 2x);
+}
+.header-wrap .fl {
+  float: left;
+}
+.header-wrap .fr {
+  float: right;
+}
+.header-wrap .clearfix {
+  zoom: 1;
+}
+.header-wrap .hotKey {
+  position: absolute;
+  top: 52PX;
+  left: 0;
+}
+.header-wrap .hotKey li {
+  float: left;
+  padding-right: 20PX;
+}
+.header-wrap .hotKey li a {
+  color: #999;
+  font-size: 12PX;
+}
+.header-wrap .top-publish-news {
+  width: 100PX;
+  height: 46PX;
+  color: #ff552e;
+  background: #ffefe7;
+  line-height: 46PX;
+  text-align: center;
+  font-size: 16PX;
+}
+.header-wrap .top-publish-news:hover {
+  background: #ffe9de;
+}
+.header-wrap .nav-top-bar {
+  width: 100%;
+  line-height: 42PX;
+  color: #888;
+}
+.header-wrap .nav-top-bar a {
+  color: #888;
+}
+.house-detail-desc {
+  width: 100%;
+  border-top: 1PX solid #f3f3f3;
+  overflow: hidden;
+}
+.house-detail-desc .f18 {
+  font-size: 18PX;
+}
+.house-detail-desc .c_333 {
+  color: #333;
+}
+.house-detail-desc .f14 {
+  font-size: 14PX;
+}
+.house-detail-desc .f24 {
+  font-size: 24PX;
+}
+.house-detail-desc .c_555 {
+  color: #555;
+}
+.house-detail-desc .c_888 {
+  color: #888;
+}
+.house-detail-desc .pr {
+  position: relative;
+}
+.house-detail-desc .f14 {
+  font-size: 14PX;
+}
+.house-detail-desc .lh50 {
+  line-height: 50PX;
+}
+.house-detail-desc .main-detail-info {
+  width: 706PX;
+  overflow: hidden;
+  float: left;
+}
+.house-detail-desc .main-detail-info .nav-detail-bar {
+  width: 100%;
+  height: 24PX;
+  margin-top: 39PX;
+  margin-bottom: 34PX;
+  overflow: hidden;
+  font-size: 18PX;
+}
+.house-detail-desc .main-detail-info .nav-detail-bar li {
+  float: left;
+  margin-right: 57PX;
+  color: #888;
+  cursor: pointer;
+}
+.house-detail-desc .main-detail-info .nav-detail-bar li a {
+  color: #888;
+}
+.house-detail-desc .main-detail-info .nav-detail-bar li a:hover {
+  color: #333;
+}
+.house-detail-desc .main-detail-info .nav-detail-bar li.on {
+  color: #333;
+}
+.house-detail-desc .main-detail-info .nav-detail-bar li.on a {
+  color: #333;
+}
+.house-detail-desc .main-detail-info .house-warn {
+  font-family: "PingFangSC-Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #ff2e2e;
+  text-align: left;
+  background-color: #ffecec;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+.house-detail-desc .main-detail-info .house-warn i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url(https://pic4.58cdn.com.cn/nowater/fangfe/n_v2a983b273689144cb9c9945cfce6998e7.png);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  vertical-align: middle;
+  margin-top: -2px;
+  margin-right: 2px;
+}
+.house-detail-desc .main-detail-info .report-text {
+  width: 100%;
+  margin-top: 3PX;
+  height: 44PX;
+  line-height: 44PX;
+  background: #FFFAF8;
+  padding: 0 7PX;
+  font-size: 12PX;
+  color: #555;
+}
+.house-detail-desc .main-detail-info .report-text .color {
+  color: #FF552E;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate {
+  display: flex;
+  align-items: center;
+  margin: 30PX 0;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .title {
+  width: 95PX;
+  font-size: 16PX;
+  color: #333;
+  line-height: 30PX;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0PX;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal li {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14PX;
+  color: #555;
+  width: 75PX;
+  line-height: 18PX;
+  margin: 0PX;
+  padding: 0PX;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .icon {
+  position: initial;
+  background: url(//pic8.58cdn.com.cn/nowater/fangfe/n_v2432cb783174d485286f9388643d966ff.png) no-repeat center;
+  background-size: auto 80PX;
+  width: 40PX;
+  height: 40PX;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .bed i {
+  background-position: -299PX 0;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .chest i {
+  background-position: -1870PX 0;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .sofa i {
+  background-position: -924PX 5PX;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .telev i {
+  background-position: -343PX 0;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .icebox i {
+  background-position: -219PX 0;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .washer i {
+  background-position: -1252PX 0;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .air-condition i {
+  background-position: -573PX 0;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .water-heater i {
+  background-position: -854PX 0;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .broadband i {
+  background-position: -612PX 0;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .central-heater i {
+  width: 35PX;
+  background-position: -826PX 0;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .fuel-gas i {
+  background-position: -1973PX 0;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .balcony i {
+  background-position: -2011PX 0;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .toilet i {
+  background-position: -2128PX 0;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .cooker i {
+  background-position: -2597PX -5PX;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .smart-lock i {
+  background-position: -2637PX -5PX;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .smoke-exhaust i {
+  background-position: -2556PX -5PX;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .no-config {
+  color: #999;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .no-config i {
+  background-position: -2676PX -5PX;
+}
+.house-detail-desc .main-detail-info .house-disposal {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 40PX;
+  margin-bottom: 27PX;
+}
+.house-detail-desc .main-detail-info .house-disposal li {
+  font-size: 14PX;
+  color: #555;
+  float: left;
+  position: relative;
+  width: 117PX;
+  line-height: 18PX;
+  text-align: center;
+  padding-top: 39PX;
+  margin-bottom: 27PX;
+}
+.house-detail-desc .main-detail-info .house-disposal li i {
+  top: 0;
+}
+.house-detail-desc .main-detail-info .house-disposal .bed i {
+  width: 35PX;
+  height: 29PX;
+  background-position: -301PX 0;
+  left: 42PX;
+}
+.house-detail-desc .main-detail-info .house-disposal .chest i {
+  width: 25PX;
+  height: 31PX;
+  background-position: -1878PX 0;
+  left: 47PX;
+}
+.house-detail-desc .main-detail-info .house-disposal .sofa i {
+  width: 34PX;
+  height: 22PX;
+  background-position: -926PX 0;
+  left: 42PX;
+}
+.house-detail-desc .main-detail-info .house-disposal .telev i {
+  height: 30PX;
+  background-position: -346PX 0;
+  width: 33PX;
+  left: 42PX;
+}
+.house-detail-desc .main-detail-info .house-disposal .icebox i {
+  width: 25PX;
+  height: 31PX;
+  background-position: -226PX 0;
+  left: 46PX;
+}
+.house-detail-desc .main-detail-info .house-disposal .washer i {
+  width: 25PX;
+  height: 30PX;
+  background-position: -1259PX 0;
+  left: 46PX;
+}
+.house-detail-desc .main-detail-info .house-disposal .air-condition i {
+  width: 29PX;
+  height: 29PX;
+  background-position: -580PX 0;
+  left: 46PX;
+}
+.house-detail-desc .main-detail-info .house-disposal .water-heater i {
+  width: 28PX;
+  height: 30PX;
+  background-position: -861PX 0;
+  left: 46PX;
+}
+.house-detail-desc .main-detail-info .house-disposal .broadband i {
+  width: 28PX;
+  height: 26PX;
+  background-position: -618PX 0;
+  left: 46PX;
+}
+.house-detail-desc .main-detail-info .house-disposal .central-heater i {
+  width: 16PX;
+  height: 30PX;
+  background-position: -836PX 0;
+  left: 48PX;
+}
+.house-detail-desc .main-detail-info .house-disposal .fuel-gas i {
+  width: 26PX;
+  height: 31PX;
+  background-position: -1980PX 0;
+  left: 45PX;
+}
+.house-detail-desc .main-detail-info .house-disposal .balcony i {
+  width: 31PX;
+  height: 30PX;
+  background-position: -2016PX 0;
+  left: 44PX;
+}
+.house-detail-desc .main-detail-info .house-disposal .toilet i {
+  width: 31PX;
+  height: 25PX;
+  background-position: -2133PX 0;
+  left: 44PX;
+}
+.house-detail-desc .main-detail-info .house-disposal .cooker i {
+  width: 40PX;
+  height: 40PX;
+  background-position: -2597PX -5PX;
+  left: 41PX;
+}
+.house-detail-desc .main-detail-info .house-disposal .smart-lock i {
+  width: 40PX;
+  height: 40PX;
+  background-position: -2637PX -5PX;
+  left: 38PX;
+}
+.house-detail-desc .main-detail-info .house-disposal .smoke-exhaust i {
+  width: 40PX;
+  height: 40PX;
+  background-position: -2556PX -5PX;
+  left: 38PX;
+}
+.house-detail-desc .main-detail-info .house-disposal .no-config {
+  color: #999;
+}
+.house-detail-desc .main-detail-info .house-disposal .no-config i {
+  width: 40PX;
+  height: 40PX;
+  background-position: -2676PX -5PX;
+  left: 38PX;
+}
+.house-detail-desc .main-detail-info .house-disposal .icon {
+  display: inline-block;
+  position: absolute;
+  width: 16PX;
+  height: 30PX;
+  background: url(//pic8.58cdn.com.cn/nowater/fangfe/n_v2432cb783174d485286f9388643d966ff.png) no-repeat center;
+  background-size: auto 80PX;
+}
+.house-detail-desc .main-detail-info .house-word-introduce {
+  margin-bottom: 31PX;
+  font-size: 16PX;
+  color: #555;
+}
+.house-detail-desc .main-detail-info .house-word-introduce .introduce-item li {
+  width: 100%;
+  margin-bottom: 20PX;
+}
+.house-detail-desc .main-detail-info .house-word-introduce .introduce-item li .a1 {
+  width: 93PX;
+  float: left;
+  font-size: 16PX;
+  color: #333;
+  line-height: 30PX;
+}
+.house-detail-desc .main-detail-info .house-word-introduce .introduce-item li .a2 {
+  width: 612PX;
+  float: left;
+  font-size: 14PX;
+  color: #555;
+  line-height: 30PX;
+}
+.house-detail-desc .main-detail-info .house-word-introduce .introduce-item li .a2 em.fy {
+  border-bottom: 1PX solid #333;
+}
+.house-detail-desc .main-detail-info .house-word-introduce .introduce-item li .a2 em {
+  margin-right: 30PX;
+  position: relative;
+}
+.house-detail-desc .main-detail-info .house-word-introduce .introduce-item li .a2 em i.wrap {
+  position: absolute;
+  top: 20PX;
+  left: 10PX;
+  width: 300PX;
+  display: none;
+  background: #fff;
+  z-index: 9;
+}
+.house-detail-desc .main-detail-info .house-word-introduce .introduce-item li .a2 em i.text {
+  border: 1PX solid #ddd;
+  padding: 0 5PX;
+  line-height: 10PX;
+  padding: 5PX;
+  line-height: 16PX;
+  font-size: 10PX;
+  border-radius: 3PX;
+  display: inline-block;
+}
+.house-detail-desc .main-detail-info .house-word-introduce .introduce-item li .a2 em.fy:hover {
+  cursor: pointer;
+}
+.house-detail-desc .main-detail-info .house-word-introduce .introduce-item li .a2 em.fy:hover i.wrap {
+  display: block;
+}
+.house-detail-desc .main-detail-info .house-word-introduce .introduce-item li .a2 .code-wrap {
+  position: relative;
+  cursor: pointer;
+}
+.house-detail-desc .main-detail-info .house-word-introduce .introduce-item li .a2 .code-wrap .num {
+  color: #0091d7;
+}
+.house-detail-desc .main-detail-info .house-word-introduce .introduce-item li .a2 .code-wrap .qrcode-popover {
+  display: none;
+  position: absolute;
+  right: -151PX;
+  bottom: -75PX;
+  border: 1PX solid #D2D2D2;
+  background-color: #fff;
+  text-align: center;
+  padding: 18PX 18PX 12PX;
+}
+.house-detail-desc .main-detail-info .house-word-introduce .introduce-item li .a2 .code-wrap .qrcode-popover img {
+  width: 100PX;
+  height: 100PX;
+}
+.house-detail-desc .main-detail-info .house-word-introduce .introduce-item li .a2 .code-wrap .qrcode-popover p {
+  height: 20PX;
+  line-height: 20PX;
+  margin-top: 10PX;
+  font-size: 12PX;
+  color: #666;
+}
+.house-detail-desc .main-detail-info .house-word-introduce .introduce-item li .a2 .code-wrap .qrcode-popover .r_jiao {
+  width: 21PX;
+  height: 17PX;
+  top: 65PX;
+  left: -9PX;
+  background-position: -1680PX 0;
+  background-image: url(//img.58cdn.com.cn/ui8/house/detail/images/zufang-detail-icon@2x.png);
+  background-size: auto 80PX;
+  position: absolute;
+  display: inline-block;
+  transform: rotate(-90deg);
+}
+.house-detail-desc .main-detail-info .house-word-introduce .introduce-item li .a2 .code-wrap:hover .qrcode-popover {
+  display: block;
+}
+.house-detail-desc .main-detail-info .house-word-introduce .introduce-item li .officialCheck {
+  display: inline-block;
+  margin-top: 10PX;
+  margin-top: 5PX;
+  width: 77PX;
+  height: 18PX;
+  background: url('https://pic6.58cdn.com.cn/nowater/fangfe/n_v296cea6e3124d4719b007ae4493f30b12.png');
+}
+.house-detail-desc .main-detail-info .house-word-introduce .introduce-item li:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.house-detail-desc .main-detail-info .house-pic-list {
+  width: 100%;
+  overflow: hidden;
+}
+.house-detail-desc .main-detail-info .house-pic-list li.even {
+  margin-right: 10PX;
+}
+.house-detail-desc .main-detail-info .house-pic-list li.hide {
+  display: none;
+}
+.house-detail-desc .main-detail-info .house-pic-list .pic {
+  float: left;
+  cursor: pointer;
+  width: 348PX;
+  height: 261PX;
+  margin-bottom: 10PX;
+}
+.house-detail-desc .main-detail-info .house-pic-list .pic img {
+  background: #fff;
+  -moz-opacity: 1;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.house-detail-desc .main-detail-info .house-pic-list .pic img:hover {
+  opacity: 0.8;
+}
+.house-detail-desc .main-detail-info .house-pic-list .view-more-pic {
+  width: 704PX;
+  height: 46PX;
+  float: left;
+}
+.house-detail-desc .main-detail-info .house-pic-list .view-more {
+  height: 46PX;
+  line-height: 46PX;
+  text-align: center;
+  border: 1PX solid #e0e0e0;
+}
+.house-detail-desc .main-detail-info .house-pic-list .view-more a {
+  position: relative;
+  width: 100%;
+  height: 46PX;
+  line-height: 46PX;
+  font-size: 14PX;
+  display: block;
+  color: #555;
+  background: #f5f5f5;
+}
+.house-detail-desc .main-detail-info .house-pic-list .view-more:hover a {
+  background: #e0e0e0;
+}
+.house-detail-desc .main-detail-info .district-info-header {
+  margin-top: 60PX;
+  margin-bottom: 35PX;
+  height: 70PX;
+}
+.house-detail-desc .main-detail-info .district-info-header .district-pic {
+  width: 70PX;
+  height: 70PX;
+  overflow: hidden;
+}
+.house-detail-desc .main-detail-info .district-info-header .district-decs {
+  margin-left: 15PX;
+  margin-top: -3PX;
+}
+.house-detail-desc .main-detail-info .district-info-header .district-decs a {
+  text-decoration: none;
+}
+.house-detail-desc .main-detail-info .district-info-header .district-decs .icon {
+  margin-bottom: -2PX;
+  width: 10PX;
+  height: 13PX;
+  position: relative;
+  background-position: -1963PX 0;
+}
+.house-detail-desc .main-detail-info .district-info-header .district-decs .addr {
+  margin-top: 7PX;
+  margin-bottom: 6PX;
+}
+.house-detail-desc .main-detail-info .district-info-header .district-decs .trend {
+  padding-left: 0PX;
+  color: #0091d7;
+}
+.house-detail-desc .main-detail-info .district-info-header .district-decs .trend i {
+  width: 18PX;
+  height: 10PX;
+  background-position: 0 0;
+  left: 0;
+}
+.house-detail-desc .main-detail-info .district-info-header .district-decs .trend:hover {
+  color: #ff552e;
+}
+.house-detail-desc .main-detail-info .district-info-header .fl {
+  float: left;
+}
+.house-detail-desc .main-detail-info .district-info-header .district-online-sale {
+  color: #888;
+  font-size: 14PX;
+}
+.house-detail-desc .main-detail-info .district-info-header .district-online-sale a {
+  display: inline-block;
+  margin-right: 8PX;
+  width: 80PX;
+  height: 90PX;
+  color: #888;
+}
+.house-detail-desc .main-detail-info .district-info-header .district-online-sale a em {
+  display: block;
+  text-align: center;
+}
+.house-detail-desc .main-detail-info .district-info-header .district-online-sale a:hover {
+  background: #f8f8f8;
+}
+.house-detail-desc .main-detail-info .district-info-header .fr {
+  float: right;
+}
+.house-detail-desc .main-detail-info .district-info-list {
+  border-top: 1PX solid #f8f8f8;
+  padding: 12PX 0 24PX 0;
+  line-height: 28PX;
+  font-size: 14PX;
+  color: #333;
+}
+.house-detail-desc .main-detail-info .district-info-list li {
+  list-style: none;
+}
+.house-detail-desc .main-detail-info .district-info-list li span {
+  display: inline-block;
+  margin-right: 15PX;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap {
+  width: 706PX;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap #dtjt_title {
+  height: 28PX;
+  line-height: 28PX;
+  margin-bottom: 12PX;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap span {
+  display: inline-block;
+  font-size: 14PX;
+  color: #888;
+  cursor: pointer;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap span:hover {
+  color: #333;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap span.active {
+  color: #333;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap #baidu_map {
+  width: 706PX;
+  position: relative;
+  height: 320PX;
+  overflow: hidden;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap #baidu_map #dtjt_info {
+  height: 320PX;
+  position: relative;
+  width: 706PX;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap #baidu_map #dtjt_info #map {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap #baidu_map #dtjt_info .map_tab {
+  right: 20PX;
+  position: absolute;
+  top: 20PX;
+  width: 90PX;
+  border: 1PX solid #d2d2d2;
+  display: none;
+  font-size: 12PX;
+  background: #fff;
+  padding-bottom: 8PX;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap #baidu_map #dtjt_info .map_tab dl {
+  cursor: pointer;
+  height: 28PX;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap #baidu_map #dtjt_info .map_tab dl dt.item-dt {
+  height: 15PX;
+  padding: 7PX 0 7PX 10PX;
+  position: relative;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap #baidu_map #dtjt_info .map_tab dl dt.item-dt label {
+  display: block;
+  overflow: hidden;
+  cursor: default;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap #baidu_map #dtjt_info .map_tab dl dt.item-dt label input {
+  width: 15PX;
+  height: 15PX;
+  margin: 0;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap #baidu_map #dtjt_info .map_tab dl dt:hover {
+  background: #f8f8f8;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap #baidu_map #dtjt_info .map_tab dl.hide {
+  display: none;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap #baidu_map #dtjt_info .map_tab .zbpz-title {
+  line-height: 28PX;
+  padding: 7PX 0 0 10PX;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap .map {
+  display: none;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap .active {
+  display: inline-block;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap .view-more-detailmap {
+  width: 704PX;
+  height: 46PX;
+  margin-top: 10PX;
+  border: 1PX solid #e0e0e0;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap .view-more-detailmap a {
+  position: relative;
+  width: 100%;
+  height: 46PX;
+  line-height: 46PX;
+  font-size: 14PX;
+  display: block;
+  color: #555;
+  background: #f5f5f5;
+  text-align: center;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap .view-more-detailmap .icon {
+  margin-bottom: -4PX;
+  width: 10PX;
+  height: 13PX;
+  position: absolute;
+  top: 18PX;
+  background-position: -1963PX 2PX;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap .view-more-detailmap:hover a {
+  background: #e0e0e0;
+}
+.layout_wrap {
+  position: absolute;
+  width: 32PX;
+  height: 38PX;
+  background: url(//pages.anjukestatic.com/usersite/site/img/map/icon-sp-map.png) center center no-repeat;
+}
+.layout_wrap.ftr_restaurant {
+  background-position: -128PX -38PX;
+}
+.layout_wrap.ftr_restaurant:hover {
+  background-position: 0PX -114PX;
+}
+.layout_wrap.ftr_bus {
+  background-position: 0PX 0PX;
+}
+.layout_wrap.ftr_bus:hover {
+  background-position: -64PX -114PX;
+}
+.layout_wrap.ftr_subway {
+  background-position: -128PX -76PX;
+}
+.layout_wrap.ftr_subway:hover {
+  background-position: -32PX -114PX;
+}
+.layout_wrap.ftr_bank,
+.layout_wrap.ftr_ATM {
+  background-position: 0PX -38PX;
+}
+.layout_wrap.ftr_bank:hover,
+.layout_wrap.ftr_ATM:hover {
+  background-position: -96PX -76PX;
+}
+.layout_wrap.ftr_mall,
+.layout_wrap.ftr_supermarkert {
+  background-position: -64PX 0PX;
+}
+.layout_wrap.ftr_mall:hover,
+.layout_wrap.ftr_supermarkert:hover {
+  background-position: -128PX 0PX;
+}
+.layout_wrap.ftr_school {
+  background-position: -32PX -38PX;
+}
+.layout_wrap.ftr_school:hover {
+  background-position: -64PX -76PX;
+}
+.layout_wrap.ftr_hospital {
+  background-position: -64PX -38PX;
+}
+.layout_wrap.ftr_hospital:hover {
+  background-position: 0PX -76PX;
+}
+.layout_wrap:hover .layout_detail {
+  display: block;
+}
+.layout_wrap .layout_detail {
+  position: absolute;
+  bottom: 48PX;
+  left: -12PX;
+  font-size: 12PX;
+  color: #333;
+  background: #fff;
+  border: 1PX solid #f0f0f0;
+  border-radius: 4PX;
+  padding: 10PX 15PX 10PX;
+  width: 230PX;
+  z-index: 10;
+  box-shadow: 4PX 4PX 4PX #999;
+}
+.layout_wrap .layout_detail .layout_title {
+  font-size: 14PX;
+  color: #f60;
+  width: 175PX;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.layout_wrap .layout_detail .distance_address {
+  font-size: 12PX;
+  color: #333;
+  width: 230PX;
+  line-height: 20PX;
+  margin-top: 5PX;
+  white-space: normal;
+}
+.layout_wrap .layout_detail .distance_tag {
+  position: absolute;
+  right: 15PX;
+  top: 12PX;
+  height: 15PX;
+}
+.layout_wrap .layout_detail .distance_tag i {
+  margin-right: 4PX;
+  display: inline-block;
+  vertical-align: -1PX;
+  width: 12PX;
+  height: 12PX;
+  background: url(//pages.anjukestatic.com/usersite/site/img/map/icon-sp-map.png) center center no-repeat;
+  background-position: -160PX -118PX;
+}
+.layout_wrap .layout_detail .layout_detail_down {
+  position: absolute;
+  bottom: -11PX;
+  left: 19PX;
+  width: 15PX;
+  height: 11PX;
+  background: url(//pages.anjukestatic.com/usersite/site/img/map/icon-sp-map.png) center center no-repeat;
+  background-position: -160PX -107PX;
+}
+.map_tab_sel {
+  display: block !important;
+}
+.map_tab_sel .zbpz-title {
+  display: block;
+}
+.map_tab_sel .zbpz-title .icon {
+  position: relative;
+  background-position: -1345PX 4PX;
+  height: 18PX;
+  margin-bottom: -2PX;
+  width: 22PX;
+}
+.map_tab_sel dl {
+  cursor: pointer;
+  height: 28PX;
+}
+.map_tab {
+  right: 20PX;
+  position: absolute;
+  top: 20PX;
+  width: 90PX;
+  border: 1PX solid #d2d2d2;
+  font-size: 12PX;
+  background: #fff;
+  padding-bottom: 8PX;
+}
+.map_tab dt.on {
+  background: #fff;
+}
+.map_tab dt.over {
+  background: #f8f8f8;
+}
+.map_tab dt.item-dt {
+  height: 15PX;
+  padding: 7PX 0 7PX 10PX;
+  position: relative;
+}
+.map_tab dt.item-dt label {
+  display: block;
+  overflow: hidden;
+}
+.map_tab dt.item-dt input {
+  width: 15PX;
+  height: 15PX;
+  margin: 0;
+}
+.map_tab dt.item-dt span {
+  visibility: hidden;
+}
+.map_tab .dticon0,
+.map_tab .dticon1,
+.map_tab .dticon2,
+.map_tab .dticon3,
+.map_tab .dticon4,
+.map_tab .dticon5,
+.map_tab .dticon6 {
+  background: url(//img.58cdn.com.cn/ui7/fang/detail/img/dtspri.gif) no-repeat 0 0;
+  width: 11PX;
+  height: 15PX;
+}
+.map_tab dt.item-dt div.dt {
+  font-size: 12PX;
+  height: 15PX;
+  line-height: 15PX;
+  display: inline-block;
+  color: #888;
+}
+#soso_map {
+  width: 706PX;
+  height: 320PX;
+  position: relative;
+  overflow: hidden;
+}
+.guess-your-like {
+  margin-top: 60PX;
+}
+.guess-your-like .nav {
+  line-height: 18PX;
+  margin-bottom: 19PX;
+}
+.guess-your-like .house-ul {
+  overflow: hidden;
+}
+.guess-your-like .house-ul li {
+  float: left;
+  width: 168PX;
+  height: 176PX;
+  margin-left: 11PX;
+}
+.guess-your-like .house-ul li a {
+  text-decoration: none;
+}
+.guess-your-like .house-ul li a .pic {
+  width: 168PX;
+  height: 120PX;
+  margin-bottom: 20PX;
+}
+.guess-your-like .house-ul li a .pr {
+  position: relative;
+}
+.guess-your-like .house-ul li a .price {
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  background: #000;
+  padding: 4PX;
+}
+.guess-your-like .house-ul li.first {
+  margin-left: 0;
+}
+.guess-your-like .house-ul li .area {
+  margin-top: 10PX;
+  height: 16PX;
+}
+.guess-your-like .house-ul li:hover img {
+  opacity: 0.8;
+}
+.guess-your-like .house-ul li:hover .title {
+  color: #ff552e;
+}
+.see-again-house {
+  margin-top: 60PX;
+}
+.see-again-house .nav {
+  line-height: 18PX;
+  margin-bottom: 19PX;
+}
+.see-again-house .house-ul {
+  overflow: hidden;
+}
+.see-again-house .house-ul li {
+  float: left;
+  width: 168PX;
+  height: 214PX;
+  margin-left: 11PX;
+}
+.see-again-house .house-ul li a {
+  text-decoration: none;
+}
+.see-again-house .house-ul li a .pic {
+  width: 168PX;
+  height: 120PX;
+  margin-bottom: 20PX;
+}
+.see-again-house .house-ul li a .pr {
+  position: relative;
+}
+.see-again-house .house-ul li a .price {
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  background: #000;
+  padding: 4PX;
+}
+.see-again-house .house-ul li.first {
+  margin-left: 0;
+}
+.see-again-house .house-ul li .area {
+  margin-top: 10PX;
+}
+.see-again-house .house-ul li:hover img {
+  opacity: 0.8;
+}
+.see-again-house .house-ul li:hover .title {
+  color: #ff552e;
+}
+.side-right-info {
+  margin-top: 39PX;
+  width: 426PX;
+  overflow: hidden;
+}
+.agent-other-house {
+  margin-bottom: 57PX;
+}
+.agent-other-house .agent-house-nav {
+  font-size: 18PX;
+  line-height: 18PX;
+  margin-bottom: 19PX;
+}
+.agent-other-house li {
+  height: 120PX;
+  margin-bottom: 30PX;
+}
+.agent-other-house li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+.agent-other-house li a .pic {
+  width: 168PX;
+  height: 120PX;
+  overflow: hidden;
+}
+.agent-other-house li a .pic img {
+  background: #fff;
+  opacity: 1;
+}
+.agent-other-house li a .pic .side-right {
+  margin-left: 20PX;
+  width: 240PX;
+}
+.agent-other-house li a .pic .side-right .info-title {
+  line-height: 17PX;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.agent-other-house li a .pic .side-right .info-area-toward {
+  height: 40PX;
+  line-height: 20PX;
+  overflow: hidden;
+  margin-top: 10PX;
+  margin-bottom: 13PX;
+}
+.agent-other-house li a .side-right {
+  margin-left: 17PX;
+  width: 240PX;
+}
+.agent-other-house li a .side-right .info-title {
+  line-height: 17PX;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.agent-other-house li a .side-right .info-area-toward {
+  height: 40PX;
+  line-height: 20PX;
+  overflow: hidden;
+  margin-top: 10PX;
+  margin-bottom: 13PX;
+}
+.agent-other-house li:hover a .pic img {
+  opacity: 0.8;
+}
+.agent-other-house li:hover a .side-right p.info-title {
+  color: #ff552e;
+}
+.premium-brand-apartment {
+  margin-bottom: 60PX;
+}
+.premium-brand-apartment .brand-apartment-nav {
+  display: block;
+  line-height: 18PX;
+  margin-bottom: 19PX;
+}
+.premium-brand-apartment .brand-apartment-list li {
+  height: 120PX;
+  margin-bottom: 30PX;
+}
+.premium-brand-apartment .brand-apartment-list li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.premium-brand-apartment .brand-apartment-list li a .pic {
+  position: relative;
+  width: 168PX;
+  height: 120PX;
+  overflow: hidden;
+}
+.premium-brand-apartment .brand-apartment-list li a .pic img {
+  background: #fff;
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  opacity: 1;
+}
+.premium-brand-apartment .brand-apartment-list li a .pic .label {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 3PX 9PX;
+  font-size: 14PX;
+  color: #EACC6D;
+  line-height: 20PX;
+  background: #000;
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+}
+.premium-brand-apartment .brand-apartment-list li a .side-right {
+  margin-left: 17PX;
+  width: 240PX;
+}
+.premium-brand-apartment .brand-apartment-list li a .info-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.premium-brand-apartment .brand-apartment-list li a .info-area-toward {
+  height: 40PX;
+  line-height: 20PX;
+  overflow: hidden;
+  margin-bottom: 6PX;
+}
+.premium-brand-apartment .brand-apartment-list li a .info-special {
+  height: 22PX;
+  overflow: hidden;
+  color: #788294;
+}
+.premium-brand-apartment .brand-apartment-list li a .info-special span {
+  line-height: 22PX;
+  background: #EBF2F7;
+  padding: 4PX;
+  margin-right: 5PX;
+}
+.premium-brand-apartment .brand-apartment-list li:hover a .pic img {
+  opacity: 0.8;
+}
+.premium-brand-apartment .brand-apartment-list li:hover a .info-title {
+  color: #ff552e;
+}
+.premium-brand-apartment .brand-apartment-list .view-more-apartment {
+  width: 424PX;
+  height: 46PX;
+}
+.premium-brand-apartment .brand-apartment-list .view-more-apartment a {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  height: 46PX;
+  line-height: 46PX;
+  font-size: 14PX;
+  display: block;
+  color: #555;
+  background: #f5f5f5;
+}
+.premium-brand-apartment .brand-apartment-list .view-more-apartment .icon {
+  margin-bottom: -4PX;
+  width: 10PX;
+  height: 13PX;
+  position: absolute;
+  top: 18PX;
+  background-position: -1963PX 0;
+}
+.premium-brand-apartment .brand-apartment-list .view-more-apartment:hover a {
+  background: #e0e0e0;
+}
+.premium-brand-apartment .brand-apartment-list .view-more {
+  height: 46PX;
+  line-height: 46PX;
+  text-align: center;
+  border: 1PX solid #e0e0e0;
+}
+.wx-xcx-qrcode {
+  position: fixed;
+  right: 0;
+  bottom: 280PX;
+  border: 1PX solid #eee;
+  border-bottom: none;
+  background-color: #fff;
+  padding: 5PX;
+  cursor: pointer;
+  z-index: 4;
+}
+.wx-xcx-qrcode img {
+  width: 40PX;
+  height: 40PX;
+}
+.wx-xcx-qrcode .qrcode-popover {
+  display: none;
+  position: absolute;
+  right: 58PX;
+  bottom: -140PX;
+  border: 1PX solid red;
+  background-color: #fff;
+  text-align: center;
+  padding: 10PX;
+  margin-bottom: 25PX;
+}
+.wx-xcx-qrcode .r_jiao {
+  display: inline-block;
+  height: 50PX;
+  width: 10PX;
+  position: absolute;
+  top: 22PX;
+  right: -10PX;
+  background: url(//img.58cdn.com.cn/ui6/index/minico.png) no-repeat;
+  background-position: 0 -382PX;
+}
+.wx-xcx-qrcode .qrcode-popover img {
+  width: 140PX;
+  height: 140PX;
+}
+.wx-xcx-qrcode .qrcode-popover p {
+  font-size: 12PX;
+  color: gray;
+  margin-top: 10PX;
+}
+.other-series-recommend {
+  margin: 30PX 0;
+}
+.other-series-recommend .other-series-nav {
+  width: 100%;
+  height: 30PX;
+  margin-bottom: 13PX;
+}
+.other-series-recommend .other-series-nav li {
+  padding: 8PX;
+  float: left;
+  margin-right: 15PX;
+  cursor: pointer;
+  background: #f3f3f3;
+}
+.other-series-recommend .other-series-nav li.on {
+  background: #888;
+  color: #fff;
+}
+.other-series-recommend .other-detail-introduce {
+  width: 100%;
+}
+.other-series-recommend .other-detail-introduce li {
+  display: none;
+}
+.other-series-recommend .other-detail-introduce li.on {
+  display: block;
+}
+.other-series-recommend .other-detail-introduce a {
+  display: inline-block;
+  color: #888;
+  line-height: 24PX;
+  margin-right: 15PX;
+}
+.defraud-layer {
+  display: none;
+  z-index: 999999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+}
+.defraud-mask {
+  display: none;
+  z-index: 999999;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 640PX;
+  height: 360PX;
+  background: #fff;
+  border-radius: 2PX;
+}
+.defraud-mask .defraud-wrap {
+  position: absolute;
+  top: 106PX;
+  left: 130PX;
+  height: 160PX;
+  width: 520PX;
+  background: url(//pic4.58cdn.com.cn/nowater/fangfe/n_v2b46bd2f7e7c24bb4968e499a0e9a6978.png) no-repeat;
+}
+.defraud-mask .defraud-wrap .defraud-link {
+  margin-top: 54PX;
+  margin-left: 180PX;
+  font-size: 16PX;
+  line-height: 18PX;
+}
+.defraud-mask .defraud-wrap .defraud-link a {
+  color: #666;
+}
+.defraud-mask .defraud-wrap .defraud-know {
+  position: absolute;
+  top: 100PX;
+  left: 200PX;
+  cursor: pointer;
+  width: 170PX;
+  height: 40PX;
+  line-height: 40PX;
+  text-align: center;
+  background: #fff;
+  border: 1PX solid #ffa490;
+  font-size: 16PX;
+  color: #FF552E;
+  border-radius: 4PX;
+}
+.defraud-mask .defraud-close {
+  cursor: pointer;
+  position: absolute;
+  top: 36PX;
+  right: 42PX;
+  width: 16PX;
+  height: 16PX;
+  background-position: 0 0;
+}
+.defraud-mask .close {
+  cursor: pointer;
+  position: absolute;
+  top: 10PX;
+  right: 10PX;
+  width: 12PX;
+  height: 12PX;
+  background-position: 0 0;
+  background: url(//img.58cdn.com.cn/ui8/house/detail/images/safeicon.png) no-repeat;
+}
+#tbt-bottom-ad iframe {
+  border: 0px;
+}
+.house-basic-info {
+  margin-bottom: 40PX;
+  *margin-bottom: 80PX;
+}
+.house-basic-info .house-basic-right {
+  width: 690PX;
+  border-top: 1PX solid #f3f3f3;
+}
+.house-basic-info .house-basic-right .house-basic-desc {
+  height: 347PX;
+  margin-bottom: 10PX;
+  position: relative;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-desc-item {
+  width: 428PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-desc-item .house-pay-way {
+  line-height: 26Px;
+  padding-top: 20Px;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-desc-item .house-pay-way b {
+  font-weight: 400;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-desc-item .house-pay-way .instructions {
+  color: #888;
+  font-size: 14PX;
+  margin-right: 4PX;
+  display: inline-block;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-desc-item .house-pay-way .freeEntry {
+  position: relative;
+  display: inline-block;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-desc-item .house-pay-way .freeEntry:hover .freeDetail {
+  display: block;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-desc-item .house-pay-way .freeEntry .freeDetail {
+  display: none;
+  position: absolute;
+  top: 36PX;
+  width: 400PX;
+  padding: 18PX 12PX 9PX 12PX;
+  background: #FFF;
+  border: 1PX solid #D2D2D2;
+  z-index: 9999;
+  right: -173px;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-desc-item .house-pay-way .freeEntry .freeDetail .jianjiao {
+  width: 22PX;
+  height: 17PX;
+  top: -7PX;
+  right: 189PX;
+  background-position: -1680PX 0;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-desc-item .house-pay-way .freeEntry .freeDetail h3 {
+  font-size: 16PX;
+  line-height: 16PX;
+  color: #333;
+  margin-bottom: 14PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-desc-item .house-pay-way .freeEntry .freeDetail .freeItem {
+  overflow: hidden;
+  font-size: 14PX;
+  color: #666;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-desc-item .house-pay-way .freeEntry .freeDetail .freeItem li {
+  float: left;
+  width: 25%;
+  line-height: 14PX;
+  font-size: 14PX;
+  margin-bottom: 14PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-desc-item li {
+  line-height: 40PX;
+  font-size: 0;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-desc-item li.li_br {
+  line-height: 16PX;
+  margin: 10PX 0PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-desc-item li span {
+  display: inline-block;
+  font-size: 14PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-desc-item li .fj {
+  margin-left: 20PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-desc-item li .dt {
+  margin-left: 20PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-desc-item li .dz_br {
+  line-height: 16PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-desc-item li .fj_br {
+  margin-top: 10PX;
+  margin-left: 87PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .divider {
+  width: 120%;
+  margin-left: -10%;
+  display: block;
+  height: 1PX;
+  background: #F6F6F6;
+  display: none;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info {
+  z-index: 1;
+  width: 242PX;
+  text-align: center;
+  margin-top: -12PX;
+  position: relative;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-head-portrait,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-head-portrait {
+  width: 80PX;
+  height: 80PX;
+  margin: 25PX auto 10PX;
+  z-index: 3;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-head-portrait a,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-head-portrait a {
+  width: 80PX;
+  height: 80PX;
+  display: block;
+  overflow: hidden;
+  border-radius: 40PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-head-portrait a img,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-head-portrait a img {
+  object-fit: cover;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-head-portrait a .icon2,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-head-portrait a .icon2 {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60PX;
+  height: 60PX;
+  background-position: 0 0;
+  background: url(//pic6.58cdn.com.cn/nowater/fangfe/n_v2ca16d4ea527b4c38b3a9afe511b3baf5.png) no-repeat center;
+  display: none;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-head-portrait:hover .agent-service-district,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-head-portrait:hover .agent-service-district {
+  display: block;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-head-portrait .agent-service-district,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-head-portrait .agent-service-district {
+  display: none;
+  z-index: 10;
+  top: 70PX;
+  right: -87PX;
+  padding: 20PX;
+  width: 200PX;
+  background: #FFFFFF;
+  border: 1PX solid #D2D2D2;
+  font-size: 12PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-head-portrait .agent-service-district .jianjiao,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-head-portrait .agent-service-district .jianjiao {
+  width: 22PX;
+  height: 17PX;
+  top: -7PX;
+  right: 100PX;
+  background-position: -1680PX 0;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-head-portrait .agent-service-district .nav,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-head-portrait .agent-service-district .nav {
+  margin-bottom: 12PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-head-portrait .agent-service-district p,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-head-portrait .agent-service-district p {
+  text-align: left;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-head-portrait .agent-service-district p a,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-head-portrait .agent-service-district p a {
+  width: auto;
+  height: auto;
+  margin-right: 10PX;
+  display: inline-block;
+  font-size: 12PX;
+  color: #555;
+  line-height: 16PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-head-portrait .agent-service-district p a:hover,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-head-portrait .agent-service-district p a:hover {
+  color: #ff552e;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-name,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-name {
+  margin-bottom: 8PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-name .pho-approve,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-name .pho-approve {
+  width: 15PX;
+  background-position: -2443PX 0;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-name .single-approve,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-name .single-approve {
+  width: 22PX;
+  background-position: -2466PX 0;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-name .license-approve,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-name .license-approve {
+  width: 22PX;
+  background-position: -2498PX 0;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-name .mail-approve,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-name .mail-approve {
+  width: 22PX;
+  background-position: -2529PX 0;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-name .active-jjr,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-name .active-jjr {
+  width: 68PX;
+  height: 18PX;
+  background: #FFEEEA;
+  color: #FF552E;
+  border-radius: 2PX;
+  display: inline-block;
+  text-align: center;
+  line-height: 18PX;
+  font-size: 12PX;
+  bottom: 2PX;
+  margin-top: 5PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-name i,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-name i {
+  position: relative;
+  width: 24PX;
+  height: 17PX;
+  bottom: -2PX;
+  margin-left: -2PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-name a:hover,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-name a:hover {
+  color: #ff552e;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info#single,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info#single {
+  margin-top: 40Px;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info#single .agent-name,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info#single .agent-name {
+  margin-bottom: 2PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info#single .wx-xcx-qrcode-agent.single-qrcode,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info#single .wx-xcx-qrcode-agent.single-qrcode {
+  top: auto;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-subgroup,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-subgroup {
+  line-height: 11PX;
+  margin-bottom: 12PX;
+  color: #888;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-subgroup i,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-subgroup i {
+  position: relative;
+  width: 34PX;
+  height: 18PX;
+  background-position: -1035PX 0;
+  margin: 5PX 5PX -5PX;
+  color: #0091d7;
+  padding-left: 7PX;
+  line-height: 16PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .employment-num,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .employment-num {
+  width: 120%;
+  margin-left: -10%;
+  color: #999;
+  font-size: 12PX;
+  text-align: center;
+  margin-bottom: 4PX;
+  display: inline-block;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-score,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-score {
+  width: 100%;
+  height: 36PX;
+  display: flex;
+  margin-bottom: 10PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-score .score-item,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-score .score-item {
+  flex: 1;
+  border-right: 1px solid #ececec;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-score .score-item .score-title,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-score .score-item .score-title {
+  display: block;
+  color: #333;
+  font-size: 14PX;
+  line-height: 14PX;
+  padding-bottom: 10PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-score .score-item .score-result,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-score .score-item .score-result {
+  display: block;
+  color: #999;
+  font-size: 12PX;
+  line-height: 12PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-score .score-item:last-child,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-score .score-item:last-child {
+  border: none;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap {
+  width: 120%;
+  margin-left: -10%;
+  color: #999;
+  font-size: 12PX;
+  text-align: center;
+  margin-bottom: 9PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .business-license,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .business-license {
+  font-size: 12PX;
+  cursor: pointer;
+  margin-left: 10PX;
+  background: url(https://pic4.58cdn.com.cn/nowater/fangfe/n_v29e2c5cff6d3c4b9185b54cfc22d7e6a0.png);
+  padding-left: 22PX;
+  background-size: 18PX 14PX;
+  background-position: 1PX 1PX;
+  background-repeat: no-repeat;
+  height: 20PX;
+  position: relative;
+  background: none \9;
+  line-height: 16PX;
+  display: inline;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .business-license .agent-img-pop-wrapper,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .business-license .agent-img-pop-wrapper {
+  display: none;
+  position: absolute;
+  top: 14PX;
+  z-index: 9999;
+  padding-top: 10PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .business-license .agent-img-pop-wrapper .agent-img-pop,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .business-license .agent-img-pop-wrapper .agent-img-pop {
+  display: inline-block;
+  padding: 17PX 10PX;
+  border-radius: 10PX;
+  width: 220PX;
+  height: 283PX;
+  background: #fff;
+  box-shadow: 0 0 5PX 0 rgba(0, 0, 0, 0.25);
+  border: 1PX solid #f2f4f6;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .business-license .agent-img-pop-wrapper .agent-img-pop .img,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .business-license .agent-img-pop-wrapper .agent-img-pop .img {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .business-license .name,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .business-license .name,
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .business-license .value,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .business-license .value {
+  color: #999;
+  vertical-align: middle;
+  height: 20PX;
+  line-height: 18PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .business-license .agent-img-pop-wrapper,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .business-license .agent-img-pop-wrapper {
+  left: -94PX !important;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .business-license:hover .agent-img-pop-wrapper,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .business-license:hover .agent-img-pop-wrapper {
+  display: block;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .credit-record,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .credit-record {
+  color: #666;
+  font-size: 12PX;
+  background: url(https://pic4.58cdn.com.cn/nowater/fangfe/n_v29e2c5cff6d3c4b9185b54cfc22d7e6a0.png);
+  padding-left: 22PX;
+  background-size: 18PX 14PX;
+  background-position: 1PX 1PX;
+  background-repeat: no-repeat;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .employment-card,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-card {
+  font-size: 12PX;
+  cursor: pointer;
+  margin-right: 5PX;
+  background: url(https://pic3.58cdn.com.cn/nowater/fangfe/n_v2346b4d130e0d489f912f93dfa081b23a.png);
+  padding-left: 22PX;
+  background-size: 18PX 14PX;
+  background-position: 1PX 1PX;
+  background-repeat: no-repeat;
+  height: 20PX;
+  position: relative;
+  background: none \9;
+  line-height: 16PX;
+  display: inline;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .employment-card .agent-img-pop-wrapper,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-card .agent-img-pop-wrapper {
+  display: none;
+  position: absolute;
+  top: 14PX;
+  z-index: 9999;
+  padding-top: 10PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .employment-card .agent-img-pop-wrapper .agent-img-pop,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-card .agent-img-pop-wrapper .agent-img-pop {
+  display: inline-block;
+  padding: 17PX 10PX;
+  border-radius: 10PX;
+  width: 220PX;
+  height: 283PX;
+  background: #fff;
+  box-shadow: 0 0 5PX 0 rgba(0, 0, 0, 0.25);
+  border: 1PX solid #f2f4f6;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .employment-card .agent-img-pop-wrapper .agent-img-pop .img,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-card .agent-img-pop-wrapper .agent-img-pop .img {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .employment-card .agent-img-pop-wrapper,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-card .agent-img-pop-wrapper {
+  left: -76PX !important;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .employment-card:hover .agent-img-pop-wrapper,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-card:hover .agent-img-pop-wrapper {
+  display: block;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .employment-record-num,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-record-num {
+  font-size: 12PX;
+  cursor: pointer;
+  margin-right: 5PX;
+  position: relative;
+  background: none \9;
+  line-height: 16PX;
+  display: block;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .employment-record-num .qr-code-wrap,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-record-num .qr-code-wrap {
+  display: none;
+  z-index: 11;
+  width: 120PX;
+  position: absolute;
+  top: 18PX;
+  right: 69PX;
+  padding: 20PX 10PX;
+  background: #FFF;
+  border: 1PX solid #D2D2D2;
+  z-index: 999;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .employment-record-num .qr-code-wrap .code,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-record-num .qr-code-wrap .code {
+  width: 100PX;
+  height: 100PX;
+  display: inline-block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .employment-record-num .qr-code-wrap .word,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-record-num .qr-code-wrap .word {
+  font-size: 12PX;
+  color: #9B9B9B;
+  text-align: center;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .employment-record-num .qr-code-wrap .jianjiao,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-record-num .qr-code-wrap .jianjiao {
+  width: 22PX;
+  height: 17PX;
+  top: -7PX;
+  right: 57PX;
+  background-position: -1680PX 0;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .employment-record-num:hover .qr-code-wrap,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-record-num:hover .qr-code-wrap {
+  display: block;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .agent-store,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .agent-store {
+  margin-bottom: 8PX;
+  background: url(https://pic2.58cdn.com.cn/nowater/fangfe/n_v287d710da4e624314972a85032cc0d460.png);
+  padding-left: 25PX;
+  background-size: 20PX 15PX;
+  background-position: 1PX 0PX;
+  background-repeat: no-repeat;
+  height: 20PX;
+  background: none \9;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .agent-store a,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .agent-store a {
+  color: #999;
+  height: 20PX;
+  line-height: 18PX;
+  text-decoration: underline;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .agent-store a:hover,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .agent-store a:hover {
+  cursor: pointer;
+  color: #ff552e;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-company,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-company {
+  height: 20PX;
+  line-height: 20PX;
+  color: #333;
+  width: 110%;
+  margin-left: -5%;
+  font-size: 12PX;
+  text-align: center;
+  font-weight: 400;
+  margin-top: -3PX;
+  margin-bottom: 1PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-company i,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-company i {
+  position: relative;
+  width: 34PX;
+  height: 18PX;
+  background-position: -1035PX 0;
+  margin: 5PX 5PX -5PX;
+  color: #0091d7;
+  padding-left: 7PX;
+  line-height: 16PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .company-complaints-record,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .company-complaints-record {
+  line-height: 12PX;
+  color: #999;
+  font-size: 12PX;
+  text-align: center;
+  display: inline-block;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .company-complaints-record a,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .company-complaints-record a {
+  color: #999;
+  text-decoration: underline;
+  background: url(https://pic5.58cdn.com.cn/nowater/fangfe/n_v2dbee264e257a451c937f159d6c182ff6.png);
+  padding-left: 25PX;
+  background-size: 18PX 14PX;
+  background-position: 1PX 1PX;
+  background-repeat: no-repeat;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .company-complaints-record a:hover,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .company-complaints-record a:hover {
+  cursor: pointer;
+  color: #ff552e;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .complaints-phone,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .complaints-phone {
+  color: #999;
+  width: 110%;
+  margin-left: -5%;
+  font-size: 12PX;
+  text-align: center;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .business-wrap,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .business-wrap {
+  width: 110%;
+  margin-left: -5%;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .business-wrap .business-wrap-span,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .business-wrap .business-wrap-span {
+  display: inline-block;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .business-wrap .business-wrap-span .business-license,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .business-wrap .business-wrap-span .business-license {
+  font-size: 12PX;
+  cursor: pointer;
+  float: left;
+  margin-right: 5PX;
+  background: url(https://pic4.58cdn.com.cn/nowater/fangfe/n_v29e2c5cff6d3c4b9185b54cfc22d7e6a0.png);
+  padding-left: 22PX;
+  background-size: 20PX 15PX;
+  background-position: 1PX 1PX;
+  background-repeat: no-repeat;
+  height: 20PX;
+  position: relative;
+  background: none \9;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .business-wrap .business-wrap-span .business-license .agent-img-pop-wrapper,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .business-wrap .business-wrap-span .business-license .agent-img-pop-wrapper {
+  display: none;
+  position: absolute;
+  top: 14PX;
+  z-index: 9999;
+  padding-top: 10PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .business-wrap .business-wrap-span .business-license .agent-img-pop-wrapper .agent-img-pop,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .business-wrap .business-wrap-span .business-license .agent-img-pop-wrapper .agent-img-pop {
+  display: inline-block;
+  padding: 17PX 10PX;
+  border-radius: 10PX;
+  width: 220PX;
+  height: 283PX;
+  background: #fff;
+  box-shadow: 0 0 5PX 0 rgba(0, 0, 0, 0.25);
+  border: 1PX solid #f2f4f6;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .business-wrap .business-wrap-span .business-license .agent-img-pop-wrapper .agent-img-pop .img,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .business-wrap .business-wrap-span .business-license .agent-img-pop-wrapper .agent-img-pop .img {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .business-wrap .business-wrap-span .business-license .agent-img-pop-wrapper,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .business-wrap .business-wrap-span .business-license .agent-img-pop-wrapper {
+  left: -76PX !important;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .business-wrap .business-wrap-span .business-license:hover .agent-img-pop-wrapper,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .business-wrap .business-wrap-span .business-license:hover .agent-img-pop-wrapper {
+  display: block;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .business-wrap .business-wrap-span .employment-info,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .business-wrap .business-wrap-span .employment-info {
+  float: left;
+  margin-right: 5PX;
+  background: url(https://pic1.58cdn.com.cn/nowater/fangfe/n_v2bd34fa0730824baa99a2c5ea0ed9db16.png);
+  padding-left: 22PX;
+  background-size: 20PX 15PX;
+  background-position: 1PX 1PX;
+  background-repeat: no-repeat;
+  height: 20PX;
+  cursor: pointer;
+  font-size: 10PX;
+  display: inline-block;
+  position: relative;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .business-wrap .business-wrap-span .employment-info .name,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .business-wrap .business-wrap-span .employment-info .name {
+  color: #999;
+  display: inline-block;
+  height: 20PX;
+  line-height: 18PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .business-wrap .business-wrap-span .employment-info .agent-img-pop-wrapper,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .business-wrap .business-wrap-span .employment-info .agent-img-pop-wrapper {
+  left: -82PX !important;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .business-wrap .business-wrap-span .employment-info:hover .agent-img-pop-wrapper,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .business-wrap .business-wrap-span .employment-info:hover .agent-img-pop-wrapper {
+  display: block;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .business-wrap .business-wrap-span .agent-store,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .business-wrap .business-wrap-span .agent-store {
+  margin-bottom: 8PX;
+  float: left;
+  background: url(https://pic2.58cdn.com.cn/nowater/fangfe/n_v287d710da4e624314972a85032cc0d460.png);
+  padding-left: 25PX;
+  background-size: 20PX 15PX;
+  background-position: 1PX 0PX;
+  background-repeat: no-repeat;
+  height: 20PX;
+  background: none \9;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .business-wrap .business-wrap-span .agent-store a,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .business-wrap .business-wrap-span .agent-store a {
+  color: #999;
+  height: 20PX;
+  line-height: 18PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .business-wrap .business-wrap-span .agent-store a:hover,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .business-wrap .business-wrap-span .agent-store a:hover {
+  cursor: pointer;
+  color: #ff552e;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .business-wrap .business-wrap-span .agent-store a:last-child,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .business-wrap .business-wrap-span .agent-store a:last-child {
+  display: none;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .wx-xcx-qrcode-agent,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .wx-xcx-qrcode-agent {
+  text-align: center;
+  position: absolute;
+  top: 280PX;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  border: 1px solid #f4f6f6;
+  padding-top: 5PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .wx-xcx-qrcode-agent img,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .wx-xcx-qrcode-agent img {
+  width: 150PX;
+  height: 150PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .wx-xcx-qrcode-agent span,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .wx-xcx-qrcode-agent span {
+  font-size: 12PX;
+  color: gray;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-wrap,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-wrap {
+  overflow: hidden;
+  padding-left: 25PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-wrap .agent-auth,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-wrap .agent-auth {
+  font-size: 14PX;
+  color: #39A0F4;
+  margin-top: 14PX;
+  margin-bottom: 10PX;
+  float: left;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-wrap .agent-auth .icon-auth,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-wrap .agent-auth .icon-auth {
+  width: 18PX;
+  height: 14PX;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(//img.58cdn.com.cn/fangrs/img/eb1078790f94e91f04b36f84683451eb.png);
+  background: none \9;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-wrap .agent-auth > *,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-wrap .agent-auth > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-wrap .agent-house,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-wrap .agent-house {
+  height: 14PX;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://pic2.58cdn.com.cn/nowater/fangfe/n_v2a851081aeacc48f9bd381f7a11cc6803.png);
+  float: left;
+  font-size: 14PX;
+  color: #39A0F4;
+  margin-top: 14PX;
+  margin-bottom: 10PX;
+  padding-left: 16PX;
+  margin-left: 14PX;
+  background: none \9;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info {
+  background: #FCFCFC;
+  border-radius: 2PX;
+  border: 1px solid #F2F0ED;
+  margin-top: 16PX;
+  padding: 15PX;
+  max-width: 220PX;
+  height: 385PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-info-block {
+  padding: 16PX 0;
+  border-bottom: 1px solid #F2F0ED;
+  font-size: 12PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-info-block:last-of-type {
+  border-bottom: none;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .basic-info:hover ~ .wx-xcx-qrcode-agent {
+  display: inline-block;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-name a.c_000 {
+  font-weight: 500;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-name i.icon {
+  margin: 0 0 0 2PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-head-portrait {
+  margin-top: 0;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-company {
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-company .icon {
+  margin: 0;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-score {
+  width: 100%;
+  height: 36PX;
+  display: flex;
+  margin-bottom: 0PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-score .score-item {
+  border: none;
+  flex: 1;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-score .score-item .score-result {
+  display: block;
+  color: #333;
+  font-size: 14PX;
+  line-height: 14PX;
+  padding-bottom: 10PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-score .score-item .score-title {
+  display: block;
+  color: #999;
+  font-size: 12PX;
+  line-height: 12PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap {
+  text-align: left;
+  width: 100%;
+  margin: 0 0 10PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-card .name,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-record-num .name,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .business-license .name,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .company-num .name {
+  text-decoration: underline;
+  vertical-align: inherit;
+  color: #999999;
+  white-space: nowrap;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-card .name a,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-record-num .name a,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .business-license .name a,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .company-num .name a {
+  color: #999999;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-card .name a:hover,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-record-num .name a:hover,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .business-license .name a:hover,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .company-num .name a:hover {
+  color: #ff552e;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .company-num {
+  background-image: url(https://wos.58cdn.com.cn/cDazYxWcDHJ/picasso/vo16oipk.png);
+  background-repeat: no-repeat;
+  padding-left: 23px;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-record-num {
+  background: url(https://pic3.58cdn.com.cn/nowater/fangfe/n_v2346b4d130e0d489f912f93dfa081b23a.png);
+  padding-left: 22PX;
+  background-size: 18PX 14PX;
+  background-position: 1PX 1PX;
+  background-repeat: no-repeat;
+  height: 20PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-record-num.rent-service {
+  background: none;
+  padding: 0;
+  display: inline-block;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-record-num.rent-service .name {
+  text-decoration: none;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-record-num .qr-code-wrap {
+  text-align: center;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-num {
+  width: 100%;
+  margin: 0;
+  text-align: left;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-card .agent-img-pop-wrapper {
+  left: -11PX !important;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .complaints-phone {
+  width: 100%;
+  margin: 0;
+  text-align: left;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .wx-xcx-qrcode-agent {
+  display: none;
+  top: 60PX;
+  left: -75PX;
+  border-radius: 10PX 0 10PX 10PX;
+  border: 1px solid #d0d8d8;
+  box-shadow: 0PX 2PX 5PX #d2cdcd;
+  padding: 5PX;
+  background: #fff;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .wx-xcx-qrcode-agent img {
+  width: 140PX;
+  height: 140PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .wx-xcx-qrcode-agent::before {
+  border: 5PX solid #d0d8d8;
+  right: -10PX;
+  top: -1px;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .wx-xcx-qrcode-agent::after {
+  border: 5PX solid #fff;
+  top: 0PX;
+  right: -8PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .wx-xcx-qrcode-agent::before,
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .wx-xcx-qrcode-agent::after {
+  display: inline-block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  position: absolute;
+}
+.house-basic-info .house-basic-right .house-fraud-tip {
+  height: 75PX;
+  position: relative;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-phone {
+  float: left;
+  width: 326PX;
+  height: 75PX;
+  line-height: 75PX;
+  background: rgba(255, 85, 46, 0.9);
+  font-size: 24PX;
+  color: #FFF;
+  text-align: center;
+  margin-right: 10PX;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-phone span {
+  display: inline-block;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-no-phone {
+  float: left;
+  width: 324PX;
+  height: 75PX;
+  line-height: 75PX;
+  background: #F9F9F9;
+  font-size: 16PX;
+  color: #999999;
+  text-align: center;
+  margin-right: 10PX;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-phonenum {
+  float: left;
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 268PX;
+  padding-left: 66PX;
+  background: #ff442d;
+  margin-right: 10PX;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-phonenum .phone-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 44PX;
+  height: 45PX;
+  padding: 15PX 11PX;
+  background-color: #ff552e;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-phonenum .phone-logo .phone-icon {
+  display: inline-block;
+  background-image: url(//img.58cdn.com.cn/fangrs/img/0ddcca87f6ede789525a5ed847637051.png);
+  width: 44PX;
+  height: 45PX;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-phonenum .chat-phone-layer {
+  cursor: pointer;
+  z-index: 1;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  line-height: 75PX;
+  font-size: 22PX;
+  color: #fff;
+  background: #ff552e;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-phonenum .phone-num {
+  margin-top: 11PX;
+  margin-bottom: 2PX;
+  font-size: 30PX;
+  color: #fff;
+  text-align: center;
+  line-height: 58PX;
+  text-shadow: 0 0 4PX rgba(139, 62, 0, 0.3);
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-phonenum .phone-num-virtual {
+  margin-top: 11PX;
+  margin-bottom: 2PX;
+  font-size: 30PX;
+  color: #fff;
+  text-align: center;
+  line-height: 36PX;
+  text-shadow: 0 0 4PX rgba(139, 62, 0, 0.3);
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-phonenum .phone-belong {
+  position: absolute;
+  left: 110PX;
+  top: 49PX;
+  text-align: center;
+  opacity: 0.77;
+  font-size: 12PX;
+  color: #fff;
+  line-height: 12PX;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-phonenum .phone-belong span {
+  display: inline-block;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-icon {
+  display: block;
+  background-repeat: no-repeat;
+  width: 66PX;
+  height: 75PX;
+  background-color: #FF552E;
+  background-image: url(https://pic1.58cdn.com.cn/nowater/fangfe/n_v2c3c3ee98766c42549b2bb5b4cf3b553a.png);
+  background-position: center;
+  background-size: 37PX 37PX;
+  float: left;
+  background-image: none \9;
+  background-color: rgba(255, 85, 46, 0.9) \9;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-cover-container {
+  float: left;
+  position: relative;
+  width: 324PX;
+  height: 75PX;
+  line-height: 75PX;
+  background: rgba(255, 85, 46, 0.9);
+  font-size: 20PX;
+  color: #FFF;
+  text-align: center;
+  margin-right: 10PX;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-cover-container .house-chat-icon-phone-white {
+  display: inline-block;
+  vertical-align: middle;
+  width: 25PX;
+  height: 25PX;
+  background-position: -25PX -51PX;
+  display: none;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-cover-container .house-chat-txt {
+  display: inline-block;
+  margin: 0 14PX;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-cover-container .phone-qr-tooltips {
+  display: none;
+  position: absolute;
+  left: 66PX;
+  top: -280PX;
+  width: 420PX;
+  height: 240PX;
+  border-radius: 2PX;
+  background: #FFF;
+  border: 1PX solid #EEE;
+  box-shadow: 0 2PX 10PX #eee;
+  padding: 12PX 8PX;
+  animation-name: fade-up;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  z-index: 999;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-cover-container .phone-qr-tooltips .tooltips-arrow-border {
+  color: #EEE;
+  bottom: -10PX;
+  z-index: -10;
+  right: 75%;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-cover-container .phone-qr-tooltips .tooltips-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  border-width: 10PX 12PX 0;
+  border-style: solid dashed dashed dashed;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-cover-container .phone-qr-tooltips .tooltips-arrow-bg {
+  color: #FFF;
+  bottom: -8PX;
+  right: 75%;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-cover-container .phone-qr-tooltips .for-center {
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  display: none;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-cover-container .phone-qr-tooltips .phone-qr-code {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 32PX;
+  width: 170PX;
+  height: 170PX;
+  position: absolute;
+  left: 42PX;
+  top: 45PX;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-cover-container .phone-qr-tooltips .phone-qr-text-container {
+  display: inline-block;
+  vertical-align: middle;
+  color: #000;
+  text-align: left;
+  position: absolute;
+  right: 40PX;
+  top: 60PX;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-cover-container .phone-qr-tooltips .phone-qr-text-container .phone-qr-text-xl {
+  font-size: 20PX;
+  color: #333;
+  line-height: 32PX;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-cover-container .phone-qr-tooltips .phone-qr-text-container .phone-qr-text-xl.mg {
+  margin-bottom: 24PX;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-cover-container .phone-qr-tooltips .phone-qr-text-container .phone-qr-text-s {
+  font-size: 14PX;
+  color: #999;
+  line-height: 24PX;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-cover-container .phone-qr-tooltips .phone-qr-text-container .phone-qr-text-s b {
+  font-weight: 400;
+  margin-right: 6PX;
+  color: #74CB89;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-expired {
+  width: 424PX;
+  line-height: 75PX;
+  text-align: center;
+  font-size: 20PX;
+  color: #fff;
+  text-shadow: 0 2PX 4PX rgba(0, 0, 0, 0.1);
+  background: #9b9da3;
+  box-shadow: 0 -5PX 12PX 0 rgba(217, 226, 233, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-im {
+  float: left;
+  height: 73PX;
+  width: 88PX;
+  margin-right: 10PX;
+  font-size: 12PX;
+  background: #F9F9F9;
+  color: #21B2EE;
+  border: 1PX solid #E6E6E6;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.1s ease;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-im .im-icon {
+  display: block;
+  width: 32PX;
+  height: 32PX;
+  margin: 12PX auto 7PX;
+  background-repeat: no-repeat;
+  background-position: -50PX 0;
+  background-image: url(//img.58cdn.com.cn/fangrs/img/8cd99ff4e7f538be32ba65dc09d98a35.png);
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-im:hover {
+  border-color: #20B1EE;
+  background: #21B2EE;
+  color: #FFF;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-im:hover .im-icon {
+  background-position: -84PX 0;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .wx-wrap {
+  width: 242PX;
+  height: 47PX;
+  float: right;
+  line-height: 60PX;
+  text-align: center;
+  color: #000;
+  margin-top: 27PX;
+  font-size: 12PX;
+  border-bottom: 1PX solid #F4F6F6;
+  display: none;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .wx-wrap i {
+  color: #000;
+  font-size: 12PX;
+}
+.house-basic-info .house-basic-right .house-fraud-tip span {
+  display: block;
+}
+.house-basic-info .house-basic-right .strongbox {
+  font-family: 'fangchan-secret', 'Hiragino Sans GB', 'Microsoft yahei', Arial, sans-serif, '宋体' !important;
+}
+.house-basic-info .clear {
+  clear: both;
+}
+.house-basic-info .jianjiao {
+  position: absolute;
+  display: inline-block;
+}
+.house-basic-pic {
+  position: relative;
+  width: 464PX;
+}
+.house-basic-pic .basic-top-bigpic {
+  cursor: pointer;
+  width: 464PX;
+  height: 348PX;
+  overflow: hidden;
+  margin-bottom: 10PX;
+}
+.house-basic-pic .basic-top-bigpic .jPlayerBtnIcon,
+.house-basic-pic .basic-top-bigpic .jPlayerBtnIcon:hover,
+.house-basic-pic .basic-top-bigpic .jplaySmallIcon,
+.house-basic-pic .basic-top-bigpic .jplaySmallIcon:hover,
+.house-basic-pic .basic-top-bigpic .jp-play,
+.house-basic-pic .basic-top-bigpic .jp-play:hover,
+.house-basic-pic .basic-top-bigpic .jp-state-playing .jp-play,
+.house-basic-pic .basic-top-bigpic .jp-state-playing .jp-play:hover,
+.house-basic-pic .basic-top-bigpic .jp-mute,
+.house-basic-pic .basic-top-bigpic .jp-mute.active,
+.house-basic-pic .basic-top-bigpic .jp-state-muted .jp-mute,
+.house-basic-pic .basic-top-bigpic .jp-full-screen,
+.house-basic-pic .basic-top-bigpic .jp-full-screen:hover,
+.house-basic-pic .basic-top-bigpic .fast-faward-icon,
+.house-basic-pic .basic-top-bigpic .jp-state-dialog .jp-loading-animate,
+.house-basic-pic .basic-top-bigpic .jp-state-dialog .jp-refresh-animate,
+.house-basic-pic .basic-top-bigpic .jp-state-dialog .jp-replay-animate,
+.house-basic-pic .basic-top-bigpic .jp-state-full-screen .jp-full-screen,
+.house-basic-pic .basic-top-bigpic .jp-state-full-screen .jp-full-screen:hover {
+  background-image: url(//img.58cdn.com.cn/fangrs/img/a314236c0ed8bcb5604345f6fec2369c.png);
+  background-size: 232PX auto;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .house-basic-pic .basic-top-bigpic .jPlayerBtnIcon,
+  .house-basic-pic .basic-top-bigpic .jPlayerBtnIcon:hover,
+  .house-basic-pic .basic-top-bigpic .jplaySmallIcon,
+  .house-basic-pic .basic-top-bigpic .jplaySmallIcon:hover,
+  .house-basic-pic .basic-top-bigpic .jp-play,
+  .house-basic-pic .basic-top-bigpic .jp-play:hover,
+  .house-basic-pic .basic-top-bigpic .jp-state-playing .jp-play,
+  .house-basic-pic .basic-top-bigpic .jp-state-playing .jp-play:hover,
+  .house-basic-pic .basic-top-bigpic .jp-mute,
+  .house-basic-pic .basic-top-bigpic .jp-mute.active,
+  .house-basic-pic .basic-top-bigpic .jp-state-muted .jp-mute,
+  .house-basic-pic .basic-top-bigpic .jp-full-screen,
+  .house-basic-pic .basic-top-bigpic .jp-full-screen:hover,
+  .house-basic-pic .basic-top-bigpic .fast-faward-icon,
+  .house-basic-pic .basic-top-bigpic .jp-state-dialog .jp-loading-animate,
+  .house-basic-pic .basic-top-bigpic .jp-state-dialog .jp-refresh-animate,
+  .house-basic-pic .basic-top-bigpic .jp-state-dialog .jp-replay-animate,
+  .house-basic-pic .basic-top-bigpic .jp-state-full-screen .jp-full-screen,
+  .house-basic-pic .basic-top-bigpic .jp-state-full-screen .jp-full-screen:hover {
+    background-image: url(//img.58cdn.com.cn/fangrs/img/cc80d8fec94d01bf689fcf36d6459711.png);
+  }
+}
+.house-basic-pic .basic-top-bigpic .jPlayerBtnIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -46PX;
+  margin-left: -46PX;
+  background-position: -97PX 0;
+  width: 92PX!important;
+  height: 92PX!important;
+  display: none;
+}
+.house-basic-pic .basic-top-bigpic .jPlayerBtnIcon:hover {
+  background-position: 0 0;
+  width: 92PX;
+  height: 92PX;
+}
+.house-basic-pic .basic-top-bigpic img {
+  width: 100%;
+  height: 100%;
+}
+.house-basic-pic .basic-top-bigpic .leftNum {
+  width: 49PX;
+  height: 26PX;
+  line-height: 26PX;
+  color: #fff;
+  background: #000;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  text-align: center;
+  right: 20PX;
+  bottom: 20PX;
+}
+.house-basic-pic .basic-top-bigpic .ax-tip {
+  position: absolute;
+  background-color: #000;
+  color: #FFF;
+  left: 0;
+  top: 0;
+  font-size: 16PX;
+  padding: 4PX 8PX;
+  line-height: 1;
+  background: #23C477;
+  background: linear-gradient(to right, #23C477, #58D85B);
+  border-radius: 0 0 4PX 0;
+}
+.house-basic-pic .basic-top-bigpic .video-wrap {
+  display: none;
+  width: 100%!important;
+  height: 100%!important;
+}
+.house-basic-pic .basic-top-bigpic .jp-video {
+  position: absolute;
+  top: 0;
+}
+.house-basic-pic .basic-top-bigpic .jp-video .jp-type-single .jp-times {
+  float: left;
+}
+.house-basic-pic .basic-top-bigpic .jp-video .jp-type-single .jp-times .jp-current-time {
+  color: #fff;
+}
+.house-basic-pic .basic-top-bigpic .jp-video .jp-type-single .jp-times span {
+  display: inline-block;
+  color: #ccc;
+  height: 50PX;
+  line-height: 50PX;
+  font-size: 12PX;
+}
+.house-basic-pic .basic-top-bigpic .jp-video .jp-current-time {
+  float: left;
+  cursor: default;
+  color: #fff;
+  margin-left: 20PX;
+}
+.house-basic-pic .basic-top-bigpic .jp-video .jp-current-time .jp-duration {
+  font-size: 12PX;
+}
+.house-basic-pic .basic-top-bigpic .jp-video .jp-toggles {
+  float: right;
+  position: relative;
+  top: 14PX;
+  right: 5PX;
+  padding: 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.house-basic-pic .basic-top-bigpic .jp-video .jp-toggles a {
+  display: block;
+  float: left;
+  text-indent: -9999PX;
+  line-height: 100%;
+  border: 0;
+  cursor: pointer;
+}
+.house-basic-pic .basic-top-bigpic .jp-video .jp-volume-controls {
+  position: absolute;
+  float: right;
+  top: -76PX;
+  width: 22PX;
+  height: 112PX;
+  margin-right: 20PX;
+  right: 30PX;
+  z-index: 100;
+}
+.house-basic-pic .basic-top-bigpic .jp-video .jp-volume-controls a,
+.house-basic-pic .basic-top-bigpic .jp-video .jp-volume-controls button {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  text-indent: -9999PX;
+  border: 0;
+  cursor: pointer;
+}
+.house-basic-pic .basic-top-bigpic .jp-video .jp-volume-controls .jp-volume-bar-wrap {
+  display: none;
+  overflow: hidden;
+  background: #000;
+  width: 22PX;
+  height: 80PX;
+  margin-bottom: 20PX;
+  cursor: pointer;
+}
+.house-basic-pic .basic-top-bigpic .jp-video .jp-volume-controls .jp-volume-bar-wrap .jp-volume-bar {
+  position: absolute;
+  background: #D8D8D8;
+  border-radius: 5PX;
+  height: 60PX;
+  top: 10PX;
+  width: 4PX;
+  left: 9PX;
+}
+.house-basic-pic .basic-top-bigpic .jp-video .jp-volume-controls .jp-volume-bar-wrap .jp-volume-bar .jp-volume-bar-value {
+  position: absolute;
+  bottom: 0;
+  border-radius: 5PX;
+  background: #ff552e;
+  width: 100%!important;
+  height: 0;
+}
+.house-basic-pic .basic-top-bigpic .jp-video .jp-volume-controls .jp-volume-bar-wrap .jp-volume-bar .jp-volume-bar-value .fast-faward-icon {
+  top: -2PX;
+  left: -4PX;
+}
+.house-basic-pic .basic-top-bigpic .jp-video .jp-no-solution {
+  padding: 5PX;
+  font-size: 0.8em;
+  background-color: #eee;
+  border: 2PX solid #009be3;
+  color: #000;
+  display: none;
+}
+.house-basic-pic .basic-top-bigpic .jp-video .jp-progress {
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 6PX;
+}
+.house-basic-pic .basic-top-bigpic .jp-video-400p {
+  width: 585PX;
+}
+.house-basic-pic .basic-top-bigpic .jp-video-400p .jp-interface {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 464PX;
+  opacity: 0.5;
+}
+.house-basic-pic .basic-top-bigpic .jp-video-400p .jp-video-play {
+  margin-top: -400PX;
+  height: 400PX;
+}
+.house-basic-pic .basic-top-bigpic .jp-video-400p .jp-controls-holder {
+  clear: both;
+  height: 50PX;
+  position: relative;
+}
+.house-basic-pic .basic-top-bigpic .jp-video-400p .jp-progress {
+  float: left;
+  position: relative;
+  top: 22PX;
+  width: 245PX;
+  height: 6PX;
+}
+.house-basic-pic .basic-top-bigpic .jp-video-full .jp-jplayer {
+  top: 0;
+  left: 0;
+  position: fixed!important;
+  position: relative;
+  overflow: hidden;
+}
+.house-basic-pic .basic-top-bigpic .jp-video-full .jp-gui {
+  position: fixed!important;
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1001;
+}
+.house-basic-pic .basic-top-bigpic .jp-video-full .jp-video-play {
+  height: 100%;
+}
+.house-basic-pic .basic-top-bigpic .jp-video-full .jp-interface {
+  position: absolute!important;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+.house-basic-pic .basic-top-bigpic .jp-video-full .jp-progress {
+  float: left;
+  position: relative;
+  top: 22PX;
+  width: 70%;
+  height: 6PX;
+}
+.house-basic-pic .basic-top-bigpic .jp-video-full div div {
+  z-index: 1000;
+}
+.house-basic-pic .basic-top-bigpic .jp-audio,
+.house-basic-pic .basic-top-bigpic .jp-audio-stream,
+.house-basic-pic .basic-top-bigpic .jp-video {
+  font-size: 16PX;
+  font-family: Verdana, Arial, sans-serif;
+  line-height: 1.6;
+  color: #666;
+  background-color: #000;
+}
+.house-basic-pic .basic-top-bigpic .jp-state-dialog,
+.house-basic-pic .basic-top-bigpic .jp-state-dialog .jp-state-bg,
+.house-basic-pic .basic-top-bigpic .jp-state-dialog .jp-state-cont {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.house-basic-pic .basic-top-bigpic .jp-state-dialog {
+  display: none;
+  z-index: 9;
+}
+.house-basic-pic .basic-top-bigpic .jp-state-dialog .jp-state-bg {
+  width: 80PX;
+  height: 100PX;
+  top: 40%;
+  left: 50%;
+  margin-top: -40PX;
+  margin-left: -50PX;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  background: #000;
+  border-radius: 2PX;
+}
+.house-basic-pic .basic-top-bigpic .jp-state-dialog .jp-state-button {
+  display: inline-block;
+  color: #fff;
+  font-size: 12PX;
+  border-radius: 3PX;
+  text-decoration: none;
+}
+.house-basic-pic .basic-top-bigpic .jp-state-dialog .jp-state-cont {
+  width: 80PX;
+  height: 100PX;
+  top: 40%;
+  left: 50%;
+  margin-top: -40PX;
+  margin-left: -50PX;
+}
+.house-basic-pic .basic-top-bigpic .jp-state-dialog .jp-state-logo {
+  margin-top: 10PX;
+  -webkit-animation: rotate 1s infinite linear;
+  animation: rotate 1s infinite linear;
+}
+.house-basic-pic .basic-top-bigpic .jp-state-dialog .jp-state-text {
+  color: #fff;
+  font-size: 12PX;
+  text-align: center;
+  margin-top: 30PX;
+  margin-bottom: 19PX;
+}
+.house-basic-pic .basic-top-bigpic .jp-state-dialog .jp-replay-animate {
+  background-position: -194PX -40PX;
+  width: 35PX;
+  height: 34PX;
+  margin-left: 23PX;
+  -webkit-animation: none;
+  animation: none;
+}
+.house-basic-pic .basic-top-bigpic .jp-jplayer {
+  background-color: #000;
+}
+.house-basic-pic .basic-top-bigpic .jp-jplayer audio,
+.house-basic-pic .basic-top-bigpic .jp-jplayer {
+  width: 0;
+  height: 0;
+}
+.house-basic-pic .basic-top-bigpic .jp-gui {
+  position: relative;
+}
+.house-basic-pic .basic-top-bigpic .jp-video-play {
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+}
+.house-basic-pic .basic-top-bigpic .jp-interface {
+  position: relative;
+  background-color: #000;
+  width: 100%;
+}
+.house-basic-pic .basic-top-bigpic .jp-interface .jp-controls {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.house-basic-pic .basic-top-bigpic .jp-interface .jp-controls a {
+  display: block;
+  float: left;
+  overflow: hidden;
+  text-indent: -9999PX;
+  border: 0;
+  cursor: pointer;
+}
+.house-basic-pic .basic-top-bigpic .jp-video .jp-type-single .jp-controls {
+  padding: 13PX 10PX 0 10PX;
+}
+.house-basic-pic .basic-top-bigpic .jp-video .jp-controls {
+  float: left;
+}
+.house-basic-pic .basic-top-bigpic .jp-progress {
+  background-color: #666;
+}
+.house-basic-pic .basic-top-bigpic .jp-progress .jp-seek-bar {
+  background: #666;
+  width: 0;
+  height: 100%;
+  cursor: pointer;
+}
+.house-basic-pic .basic-top-bigpic .jp-progress .jp-seek-bar .jp-play-bar {
+  overflow: auto!important;
+  position: relative;
+  background: #ff552e;
+  width: 0;
+  height: 100%;
+}
+.house-basic-pic .basic-top-bigpic .jp-play {
+  background-position: -81PX -174PX;
+  width: 22PX;
+  height: 22PX;
+}
+.house-basic-pic .basic-top-bigpic .jp-state-playing .jp-play {
+  background-position: -158PX -140PX;
+}
+.house-basic-pic .basic-top-bigpic .jp-mute {
+  background-position: -27PX -174PX;
+  width: 22PX;
+  height: 22PX;
+  bottom: 0;
+  left: 0;
+}
+.house-basic-pic .basic-top-bigpic .jp-mute.active {
+  background-position: 0 -174PX;
+  width: 22PX;
+  height: 22PX;
+}
+.house-basic-pic .basic-top-bigpic .jp-full-screen {
+  background-position: -131PX -140PX;
+  width: 22PX;
+  height: 22PX;
+}
+.house-basic-pic .basic-top-bigpic .basic-pic-load {
+  display: none;
+  width: 90PX;
+  height: 75PX;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-left: -45PX;
+}
+.house-basic-pic .basic-top-bigpic .basic-pic-load .top {
+  width: 90PX;
+  height: 45PX;
+  top: 0;
+  left: 0;
+  background-position: -2244PX 0;
+  -webkit-animation: rotateOut 1s infinite linear;
+  animation: rotateOut 1s infinite linear;
+}
+.house-basic-pic .basic-top-bigpic .basic-pic-load .bottom {
+  width: 60PX;
+  height: 30PX;
+  bottom: 0;
+  left: 15PX;
+  background-position: -2173PX 0;
+  -webkit-animation: rotateIn 1s infinite linear;
+  animation: rotateIn 1s infinite linear;
+}
+.house-basic-pic .basic-pic-list {
+  width: 100%;
+  height: 75PX;
+  overflow: hidden;
+}
+.house-basic-pic .basic-pic-list .pic-list-wrap {
+  padding-left: 35PX;
+  width: 10000PX;
+}
+.house-basic-pic .basic-pic-list .pic-list-wrap li {
+  cursor: pointer;
+  position: relative;
+  width: 91PX;
+  height: 75PX;
+  margin-right: 10PX;
+  float: left;
+  background: #000;
+}
+.house-basic-pic .basic-pic-list .pic-list-wrap li.actives img {
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  opacity: 1;
+}
+.house-basic-pic .basic-pic-list .pic-list-wrap li:hover {
+  background: #333;
+}
+.house-basic-pic .basic-pic-list .pic-list-wrap li:hover img {
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  opacity: 1;
+}
+.house-basic-pic .basic-pic-list .pic-list-wrap li img {
+  background: #fff;
+  filter: alpha(opacity=60);
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+}
+.house-basic-pic .basic-pic-list .pic-list-wrap li .icon-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.house-basic-pic .basic-pic-list .pic-list-wrap li .icon-box .icon-player {
+  display: inline-block;
+  width: 30PX;
+  height: 30PX;
+  background-image: url(//img.58cdn.com.cn/fangrs/img/a314236c0ed8bcb5604345f6fec2369c.png);
+  background-size: 181PX auto;
+  background-repeat: no-repeat;
+  background-position: -94PX -76PX;
+}
+.house-basic-pic .basic-pic-list .pic-list-wrap li .no-bg {
+  background: none;
+}
+.house-basic-pic .basic-pic-list .basic-pic-left,
+.house-basic-pic .basic-pic-list .basic-pic-right {
+  top: 0;
+  width: 25PX;
+  height: 75PX;
+  display: block;
+  background-color: #000;
+  filter: alpha(opacity=75);
+  -moz-opacity: 0.75;
+  opacity: 0.75;
+}
+.house-basic-pic .basic-pic-list .basic-pic-left:hover,
+.house-basic-pic .basic-pic-list .basic-pic-right:hover {
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  opacity: 1;
+}
+.house-basic-pic .basic-pic-list .basic-pic-left {
+  left: 0;
+  background-position: -1358PX 31PX;
+}
+.house-basic-pic .basic-pic-list .basic-pic-right {
+  right: 0;
+  background-position: -1320PX 31PX;
+}
+.piclayer {
+  display: none;
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: red;
+  background-color: #000;
+  filter: alpha(opacity=85);
+  -moz-opacity: 0.85;
+  opacity: 0.85;
+  text-align: center;
+}
+.picmask {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 999999;
+}
+.picmask .big-top-bigpic {
+  margin-top: 50PX;
+  margin-bottom: 20PX;
+  height: 75%;
+  _height: 500PX;
+  overflow: hidden;
+}
+.picmask .big-top-bigpic img {
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.picmask .big-top-bigpic .big-pic-load {
+  display: none;
+  width: 90PX;
+  height: 75PX;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-left: -45PX;
+}
+.picmask .big-top-bigpic .big-pic-load .top {
+  width: 90PX;
+  height: 45PX;
+  top: 0;
+  left: 0;
+  background-position: -2244PX 0;
+  -webkit-animation: rotateOut 1s infinite linear;
+  animation: rotateOut 1s infinite linear;
+}
+.picmask .big-top-bigpic .big-pic-load .bottom {
+  width: 60PX;
+  height: 30PX;
+  bottom: 0;
+  left: 15PX;
+  background-position: -2173PX 0;
+  -webkit-animation: rotateIn 1s infinite linear;
+  animation: rotateIn 1s infinite linear;
+}
+.picmask .big-pic-list {
+  position: absolute;
+  width: 760PX;
+  height: 75PX;
+  overflow: hidden;
+  left: 50%;
+  margin-left: -380PX;
+  bottom: 20PX;
+}
+.picmask .big-pic-list .bigpic-list-wrap {
+  margin-left: -8PX;
+  width: 10000PX;
+}
+.picmask .big-pic-list .bigpic-list-wrap img {
+  background: #fff;
+  filter: alpha(opacity=60);
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+}
+.picmask .big-pic-list .bigpic-list-wrap li {
+  position: relative;
+  width: 120PX;
+  height: 75PX;
+  margin-left: 8PX;
+  float: left;
+}
+.picmask .big-pic-list .bigpic-list-wrap li.actives img {
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  opacity: 1;
+}
+.picmask .big-pic-list .bigpic-list-wrap li:hover {
+  background: #333;
+}
+.picmask .big-pic-list .bigpic-list-wrap li:hover img {
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  opacity: 1;
+}
+.picmask .big-pic-leftnum {
+  position: absolute;
+  left: 50%;
+  bottom: 137PX;
+  margin-left: -25PX;
+  width: 49PX;
+  height: 26PX;
+  line-height: 26PX;
+  color: #fff;
+  background: #000;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  text-align: center;
+}
+.picmask .big-pic-left,
+.picmask .big-pic-right {
+  width: 20%;
+  height: 100%;
+  _height: 550PX;
+  top: 0;
+}
+.picmask .big-pic-left .icon,
+.picmask .big-pic-right .icon {
+  top: 50%;
+  width: 28PX;
+  height: 50PX;
+  margin-top: -25PX;
+  display: block;
+}
+.picmask .big-pic-left {
+  left: 0;
+}
+.picmask .big-pic-left .icon {
+  left: 50PX;
+  background-position: -2092PX 0;
+}
+.picmask .big-pic-right {
+  right: 0;
+}
+.picmask .big-pic-right .icon {
+  right: 50PX;
+  background-position: -2056PX 0;
+}
+.picmask .picclose {
+  position: absolute;
+  width: 80PX;
+  height: 80PX;
+  top: 0;
+  right: 0;
+  background-position: -1488PX 0;
+  cursor: pointer;
+}
+.vr-box,
+.vr-layer,
+.vr-container {
+  width: 100%;
+  height: 100%;
+}
+.vr-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.basic-top-bigpic .vr-icon-box,
+.basic-pic-list .vr-icon-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.basic-top-bigpic .vr-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.basic-top-bigpic .vr-icon-box i.vr {
+  display: inline-block;
+  background: url(//pic4.58cdn.com.cn/nowater/fangfe/n_v270e3f58bda9d4a468d283804d566bf78.png);
+  width: 48px;
+  height: 48px;
+  background-size: 48px auto;
+  animation: vr-l 2s steps(20) infinite;
+}
+@keyframes vr-l {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -960px;
+  }
+}
+.basic-pic-list .vr-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.basic-pic-list .vr-icon-box i.vr {
+  display: inline-block;
+  background: url(//pic4.58cdn.com.cn/nowater/fangfe/n_v270e3f58bda9d4a468d283804d566bf78.png);
+  width: 24px;
+  height: 24px;
+  background-size: 24px auto;
+  animation: vr-a 2s steps(20) infinite;
+}
+@keyframes vr-a {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -480px;
+  }
+}

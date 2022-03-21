@@ -1,0 +1,30 @@
+
+.mixin-vr-icon(@wh, @keyframes-name: vr-a){
+    @icon-wh: @wh * 0.8;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;                              
+    background: rgba(0, 0, 0, 0.5);
+    width: @wh;
+    height: @wh;
+    border-radius: 50%;
+
+    i.vr{
+        display: inline-block;
+        background: url(//pic4.58cdn.com.cn/nowater/fangfe/n_v270e3f58bda9d4a468d283804d566bf78.png);
+        width: @icon-wh;
+        height: @icon-wh;
+        background-size: @icon-wh auto;
+        animation: @keyframes-name 2s steps(20) infinite;
+    }
+    
+    @keyframes @keyframes-name {
+        0%{
+            background-position: 0 0;
+        }
+        100% {
+            background-position: 0 -(@icon-wh * 20);
+        }
+    }
+}

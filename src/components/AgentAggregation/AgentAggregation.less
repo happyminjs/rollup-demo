@@ -1,0 +1,326 @@
+
+// 经纪人聚合样式
+.agent-aggregation{
+    margin-top: 60PX;
+    padding-bottom: 60PX;
+    .title{
+        width: 100%;
+        color: #333;
+        font-size: 18PX;
+        position: relative;
+
+        a.more{
+            position: absolute;
+            right: 0;
+            color:#0091D7;
+            font-size: 14PX;
+            background: url('../../assets/btn_aarow_58_pc@2x.png');
+            background-size: 12PX 12PX;
+            background-position: 56PX 1PX;
+            background-repeat: no-repeat;
+            padding-right: 10PX;
+            
+        }
+    }
+
+    ul{
+        li{
+            margin: 30PX 0;
+            .empty{
+                clear: both;
+            }
+
+            .left{
+                float: left;
+
+                .head{
+                    width:70PX;
+                    height: 70PX;
+                    border-radius:35PX;
+                    background: red;
+                    float: left;
+                }
+
+                .infor{
+                    margin-left: 10PX;
+                    float: left;
+                    margin-top:5PX; 
+
+                    .name{
+                        color: #333;
+                        font-size: 18PX;
+                        position: relative;
+
+                        .active-tag{
+                            width: 68PX;
+                            height: 17PX;
+                            background: #FFEEEA;
+                            color: #FF552E;
+                            border-radius:2PX;
+                            display: inline-block;
+                            text-align: center;
+                            line-height: 17PX;
+                            font-size: 12PX;
+                            margin-left: 3PX;
+                            position: absolute;
+                        }
+                    }
+
+                    .agent-icon{
+                        margin: 5PX 0 7PX;
+                        .icon{
+                            background: url(//pic8.58cdn.com.cn/nowater/fangfe/n_v2432cb783174d485286f9388643d966ff.png) no-repeat center;
+                            background-size: auto 80PX;
+                        }
+
+                        i{
+                            position: relative;
+                            width: 24PX;
+                            height: 17PX;
+                            bottom: -4PX;
+                            margin-left: -2PX;
+                        }
+
+                        .pho-approve{
+                            width: 15PX;
+                            background-position: -2443PX 0;
+                        }
+
+                        .single-approve {
+                            width: 22PX;
+                            background-position: -2466PX 0;
+                        }
+
+                        .license-approve{
+                            width: 22PX;
+                            background-position: -2497PX 0;
+                        }
+
+                        .mail-approve {
+                            width: 22PX;
+                            background-position: -2529PX 0;
+                        }
+                        
+                    }
+
+                    .card-store{
+                        width: 330px;
+                        // 营业执照
+                        .employment-card{
+                            font-size: 12PX;
+                            cursor: pointer;
+                            margin-right: 5PX;
+                            background: url(https://pic4.58cdn.com.cn/nowater/fangfe/n_v29e2c5cff6d3c4b9185b54cfc22d7e6a0.png);
+                            padding-left: 22PX;
+                            background-size: 18PX 14PX;
+                            background-position: 1PX 1PX;
+                            background-repeat: no-repeat;
+                            height: 20PX;
+                            position: relative;
+                            background: none \9;
+                            line-height: 16PX;
+                            display: inline;
+                            color: #999;
+
+                            .name{
+                                font-size: 12PX;
+                            }
+
+                            .agent-img-pop-wrapper {
+                                display: none;
+                                position: absolute;
+                                top: 14PX;
+                                z-index: 9999;
+                                padding-top: 10PX;
+
+                                .agent-img-pop {
+                                    display: inline-block;
+                                    padding: 17PX 10PX;
+                                    border-radius: 10PX;
+                                    width: 220PX;
+                                    height: 283PX;
+                                    background: #fff;
+                                    box-shadow: 0 0 5PX 0 rgba(0,0,0,.25);
+                                    border: 1PX solid #f2f4f6;
+
+                                    .img {
+                                        height: 100%;
+                                        width: 100%;
+                                        display: inline-block;
+                                        background-position: center center;
+                                        background-repeat: no-repeat;
+                                        background-size: 100% 100%;
+                                    }
+                                }
+                            }
+
+                            .name, .value {
+                                color: #999;
+                                vertical-align: middle;
+                                height: 20PX;
+                                line-height: 18PX;
+                            }
+
+                            .agent-img-pop-wrapper {
+                                left: -76PX!important;
+                            }
+
+                            &:hover {
+                                .agent-img-pop-wrapper {
+                                    display: block;
+                                }
+                            }
+                            
+                        }
+
+                        // 进入店铺
+                        .agent-store{
+                            font-size: 12PX;
+                            cursor: pointer;
+                            margin-right: 5PX;
+                            background: url(https://pic2.58cdn.com.cn/nowater/fangfe/n_v287d710da4e624314972a85032cc0d460.png);
+                            padding-left: 22PX;
+                            background-size: 18PX 14PX;
+                            background-position: 1PX 1PX;
+                            background-repeat: no-repeat;
+                            height: 20PX;
+                            position: relative;
+                            background: none \9;
+                            line-height: 16PX;
+                            display: inline;
+
+                            a{
+                                font-size: 12PX;
+                                color: #999;
+                            }
+        
+                        }
+
+                        // 从业备案编号:武汉展示
+                        .employment-record-num{
+                            font-size: 12PX;
+                            cursor: pointer;
+                            margin-right: 5PX;
+                            position: relative;
+                            background: none \9;
+                            line-height: 16PX;
+                            display: inline;
+                            color: #999 !important;
+                            .name{
+                                padding-left: 22PX;
+                                background: url(https://pic3.58cdn.com.cn/nowater/fangfe/n_v2346b4d130e0d489f912f93dfa081b23a.png);
+                                background-size: 18PX 14PX;
+                                background-position: 1PX 1PX;
+                                background-repeat: no-repeat;
+                                font-size: 12PX !important;
+                                color: #999 !important;
+
+                                span.active{
+                                    color: #257AC0 !important;
+                                }
+                            }
+
+                            // 二维码
+                            .qr-code-wrap {
+                                display: none;
+                                z-index: 11;
+                                width: 120PX;
+                                position: absolute;
+                                top: 18PX;
+                                right: -70PX;
+                                padding: 10PX;
+                                background: #FFF;
+                                border: 1PX solid #D2D2D2;
+                        
+                                .code {
+                                    width: 100PX;
+                                    height: 100PX;
+                                    display: inline-block;
+                                    background-position: center center;
+                                    background-repeat: no-repeat;
+                                    background-size: 100% 100%;
+                                    margin-left: 10PX;
+                                }
+                        
+                                .word {
+                                    font-size: 12PX;
+                                    color: #9B9B9B;
+                                    text-align: center;
+                                }
+                        
+                                .jianjiao {
+                                    width: 22PX;
+                                    height: 17PX;
+                                    top: -7PX;
+                                    right: 57PX;
+                                    background-position: -1680PX 0;
+                                }
+                                
+                            }
+                            &:hover{
+                                .qr-code-wrap{
+                                    display: block;
+                                }
+                            }                        
+                        }
+
+                    }
+                }
+            }
+            .right{
+                float: right;
+                margin-top: 9PX;
+                .btn-im{
+                    width: 40PX;
+                    height: 44PX;
+                    background-color: #F4F6F6;
+                    float: right;
+                    color: #21B2EE;
+                    font-size: 16PX;
+                    line-height: 44PX;
+                    padding-left:36PX; 
+                    font-weight: 500;
+                    background-image:url('../../assets/chat@2x.png');
+                    background-size:22PX 22PX;
+                    background-repeat: no-repeat;
+                    background-position: 9PX 12PX;
+                    margin-left: 10PX;
+                    cursor: pointer;
+                }
+
+                .btn-phone{
+                    width: 194PX;
+                    height: 44PX;
+                    overflow: hidden;
+                    cursor: pointer;
+
+                    .phone-icon{
+                        width: 40PX;
+                        height: 44PX;
+                        float: left;
+                        background-color: #FF552E;
+                        background-image:url('../../assets/call@2x.png');
+                        background-size:22PX 22PX;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                    }
+
+                    .phone-phone{
+                        width: 154PX;
+                        height: 44PX;
+                        float: left;
+                        background: rgba(255,85,46,0.9);
+                        color: #fff;
+                        font-size: 16PX;
+                        line-height: 44PX;
+                        text-align: center;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+

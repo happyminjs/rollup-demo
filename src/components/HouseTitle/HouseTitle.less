@@ -1,0 +1,381 @@
+.house-title {
+    z-index: 5;
+    position: relative;
+    padding-top: 4PX;
+
+
+    h1 {
+        font-weight: 400;
+        width: 940PX;
+        line-height: 24PX;
+    }
+
+    .house-update-info {
+        margin-top: 10PX;
+        margin-bottom: 19PX;
+        line-height: 18PX;
+
+        em, i {
+            font-style: normal;
+        }
+        .cd-official-check {
+            margin-right: 20px;
+            position: relative;
+            .cd-hy-box{
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: rgba(0,0,0,0.5);
+                left: 38%;
+                padding: 4px 6px;
+                .cd-txt{
+                    cursor: pointer;
+                    font-size: 12PX;
+                    color: #fff;
+                }
+            }
+            .qrcode-popover {
+                position: absolute;
+                display: none;
+                padding: 12px;
+                padding-bottom: 10PX;
+                background-color: #FFF;
+                box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 7px 0px;
+                border-radius: 8PX;
+                top: 25PX;
+                left: 10px;
+                text-align: center;
+                &.has-ewm{
+                    .zf-href{
+                        text-align: center;
+                        margin-top: 10px;
+                        // width: auto;
+                        // white-space: nowrap;
+                    }
+                }
+                img {
+                    width: 92px;
+                    height: 92px;
+                    margin-bottom: 4px;
+                }
+                span{
+                    display: block;
+                    color: #333;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 17px;
+                }
+                .zf-href{
+                    width: 256px;
+                    display: block;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 17px;
+                    color: #333;
+                    text-align: left;
+                    cursor: pointer;
+                }
+                .r_jiao {
+                    position: absolute;
+                    box-shadow: 2px -2px 4px -2px rgba(0, 0, 0, 0.14);
+                    background-color: #fff;
+                    width: 10px;
+                    height: 10px;
+                    transform: rotate(-45deg);
+                    top: -4px;
+                    left: 50%;
+                    margin-left: -4px;
+                }
+            }
+        }
+    }
+    .title-right-info {
+        position: absolute;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        padding-top: 7PX;
+
+        a {
+            float: left;
+            padding-top: 26PX;
+            display: block;
+
+            i {
+                width: 24PX;
+                height: 16PX;
+                top: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                background-position: -965PX 0;
+            }
+        }
+
+        .richscan-house {
+            z-index: 12;
+            margin-right: 16PX;
+            margin-left: 31PX;
+
+            i {
+                top: 0;
+                width: 27PX;;
+                height: 15PX;
+                background-position: -895PX 0;
+            }
+        }
+
+        .see-by-phone {
+            i {
+                top: 0;
+                width: 10PX;
+                left: 23PX;
+                height: 15PX;
+                background-position: -414PX 0;
+            }
+
+            .icon {
+                background-size: auto 80PX;
+            }
+        }
+
+        #report {
+            margin-left: 20PX;
+            width: 30PX;
+            height: 48PX;
+            padding-top: 29PX;
+            margin-top: -3PX;
+
+            i {
+                background: url(//pic8.58cdn.com.cn/nowater/fangfe/n_v2432cb783174d485286f9388643d966ff.png) no-repeat center;
+                width: 24PX;
+                height: 28PX;
+                background-position: -551PX 6PX;
+                top: -5PX;
+            }
+        }
+
+        #report:hover{
+            color: #ff552e;
+        }
+
+        #gaq_phone{
+            i.icon{
+                margin-left: 0PX;
+            }
+        }
+
+        #gaq_phone:hover{
+            color: #ff552e;
+            i.icon{
+                background-position: -1384PX 0;
+            }
+        }
+
+        .collect-house:hover{
+            .icon{
+                background-position: -1425PX 0;
+            }
+            span{
+                color: #ff552e;
+            }
+        }
+
+        #manage{
+            margin-right: 32PX;
+
+            i{
+                width: 24PX;
+                height: 16PX;
+                top: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                background-position: -1905PX 0;
+            }
+        }
+
+
+        .contract-download{
+            color: #888;
+            font-size: 12PX;
+            cursor: pointer;
+            position: relative;
+            margin-right: 32PX;
+
+            i{
+                width: 24PX;
+                height: 16PX;
+                top: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                background: url('https://pic4.58cdn.com.cn/nowater/fangfe/n_v256b0d441613c44adb5a83a365e4c8f35.png');
+                background-size: 18PX 16PX;
+                background-repeat: no-repeat;
+                background-position: 4PX 0PX;
+            }
+    
+        }
+        .contract-download:hover{
+            color: #FF552E;
+            // text-decoration:underline;
+        }
+
+
+
+        .on{
+            .icon {
+                background-position: center!important;
+                background-size: contain;
+                background-image: url(//img.58cdn.com.cn/fangrs/img/8a78b8d382990144be912da0cded664e.png);
+            }
+            span{
+                color: #888;
+            }
+        }
+
+        .richscan-house:hover {
+            color: #ff552e;
+            .icon{
+                background-position: -1399PX 0;
+            }
+            
+        }
+    }
+
+    .richscan-wrap {
+        display: none;
+        z-index: 11;
+        width: 120PX;
+        position: absolute;
+        top: 60PX;
+        right: 8PX;
+        padding: 20PX 10PX;
+        background: #FFF;
+        border: 1PX solid #D2D2D2;
+
+        .code {
+            margin: 0 auto;
+            width: 100PX;
+            height: 100PX;
+            margin-bottom: 10PX;
+        }
+
+        .word {
+            font-size: 12PX;
+            color: #9B9B9B;
+            text-align: center;
+        }
+
+        .jianjiao {
+            width: 22PX;
+            height: 17PX;
+            top: -7PX;
+            right: 57PX;
+            background-position: -1680PX 0;
+        }
+        
+    }
+
+    .manage-wrap {
+        display: none;
+        z-index: 11;
+        position: absolute;
+        top: 57PX;
+        right: 225PX;
+        width: 110PX;
+        height: 112PX;
+        padding: 9PX 0 18PX 0;
+        background: #FFF;
+        border: 1PX solid #D2D2D2;
+
+        .jianjiao {
+            width: 22PX;
+            height: 17PX;
+            top: -7PX;
+            right: 42PX;
+            background-position: -1680PX 0;
+            position: absolute;
+            display: inline-block;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            font-size: 12PX;
+            color: #888;
+            line-height: 28PX;
+        }
+    }
+
+   
+}
+.iframe-wrap{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    padding: 18% 30%;
+    z-index: 12;
+
+    .title{
+        line-height: 45PX;
+        width: 550PX;
+        background: #eee;
+        padding-left: 20PX;
+        color: #333;
+        position: relative;
+
+        span{
+            position: absolute;
+            width: 18PX;
+            height: 18PX;
+            background: red;
+            top: 0;
+            right: 0;
+            background: url(//img.58cdn.com.cn/ui7/detail/img/fe_window_bg.png) no-repeat 0 -35PX;
+            margin: 13PX;
+        }
+    }
+}
+#report-bar {
+    display: none;
+    position: absolute;
+    top: -370PX;
+    right: 0;
+    z-index: 9;
+    width: 110PX;
+    height: 84PX;
+    padding: 9PX 0 18PX 0;
+    background: #FFF;
+    border: 1PX solid #D2D2D2;
+
+    .jianjiao {
+        width: 22PX;
+        height: 17PX;
+        top: -7PX;
+        right: 0;
+        background-position: -1680PX 0;
+    }
+
+    a {
+        display: block;
+        padding-left: 20PX;
+        font-size: 12PX;
+        color: #888;
+        line-height: 28PX;
+    }
+}
+#report-bar{
+    a:hover{
+        background: #F8F8F8;
+    }
+}
+#manage-bar{
+    a:hover{
+        background: #F8F8F8;
+    }
+}

@@ -1,0 +1,8 @@
+
+/*兼容IE7、8的背景色*/
+.bkg-rgba(@red, @green, @blue, @opacity){
+  background-color: rgba(@red, @green, @blue, @opacity);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=argb(rgba(@red, @green, @blue, @opacity)), endColorstr=argb(rgba(@red, @green, @blue, @opacity)) );
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=argb(rgba(@red, @green, @blue, @opacity)), endColorstr=argb(rgba(@red, @green, @blue, @opacity)) );
+}
+

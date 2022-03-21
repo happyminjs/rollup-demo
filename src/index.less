@@ -1,0 +1,442 @@
+// @import url("./assets/styles/common");
+
+body {
+    background: #fff;
+    line-height: 1;
+
+    .wx-xcx-qrcode{
+        z-index: 0;
+    }
+    #rightSideBar{
+        z-index: 0;
+    }
+}
+
+#webimIframe{
+    z-index: 4 !important;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.lh20 {
+    line-height: 20PX;
+}
+
+.lh30 {
+    line-height: 30PX;
+}
+
+.clear {
+    clear: both;
+}
+
+.pr {
+    position: relative;
+}
+
+.pa {
+    position: absolute;
+}
+
+.f12 {
+    font-size: 12PX;
+}
+
+.f14 {
+    font-size: 14PX;
+}
+
+.f16 {
+    font-size: 16PX;
+}
+
+.f18 {
+    font-size: 18PX;
+}
+
+.f20 {
+    font-size: 20PX;
+}
+
+.f36 {
+    font-size: 36PX;
+}
+
+.c_333 {
+    color: #333;
+}
+
+.c_555 {
+    color: #555;
+}
+
+.c_ff552e {
+    color: #ff552e;
+}
+
+.c_888 {
+    color: #888;
+}
+
+.c_0091d7 {
+    color: #0091d7;
+}
+
+.c_000 {
+    color: #000;
+}
+
+.mr_15 {
+    margin-right: 15PX;
+}
+
+.header-wrap, .main-wrap, .footer-wrap {
+    width: 1190PX;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.main-wrap {
+    margin-top: 5PX;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.icon {
+    display: inline-block;
+    position: absolute;
+    width: 16PX;
+    height: 30PX;
+    background: url(//pic8.58cdn.com.cn/nowater/fangfe/n_v2432cb783174d485286f9388643d966ff.png) no-repeat center;
+    background-size: auto 80PX
+}
+
+.strongbox {
+    font-family: 'fangchan-secret','Hiragino Sans GB','Microsoft yahei',Arial,sans-serif,'宋体'!important;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),only screen and (min-device-pixel-ratio:2) {
+    .icon {
+        background-image:url(//img.58cdn.com.cn/ui8/house/detail/images/zufang-detail-icon@2x.png);
+        background-size: auto 80PX
+    }
+}
+
+@-webkit-keyframes rotateOut {
+    0% {
+        -webkit-transform-origin: bottom center;
+        transform-origin: bottom center
+    }
+
+    100% {
+        -webkit-transform-origin: bottom center;
+        transform-origin: bottom center;
+        -webkit-transform: rotate3d(0,0,1,360deg);
+        transform: rotate3d(0,0,1,360deg)
+    }
+}
+
+@keyframes rotateOut {
+    0% {
+        -webkit-transform-origin: bottom center;
+        transform-origin: bottom center
+    }
+
+    100% {
+        -webkit-transform-origin: bottom center;
+        transform-origin: bottom center;
+        -webkit-transform: rotate3d(0,0,1,360deg);
+        transform: rotate3d(0,0,1,360deg)
+    }
+}
+@-webkit-keyframes rotateIn {
+    0% {
+        -webkit-transform-origin: top center;
+        transform-origin: top center;
+        opacity: 1
+    }
+
+    100% {
+        -webkit-transform-origin: top center;
+        transform-origin: top center;
+        -webkit-transform: rotate3d(0,0,1,-360deg);
+        transform: rotate3d(0,0,1,-360deg)
+    }
+}
+
+@keyframes rotateIn {
+    0% {
+        -webkit-transform-origin: top center;
+        transform-origin: top center;
+        opacity: 1
+    }
+
+    100% {
+        -webkit-transform-origin: top center;
+        transform-origin: top center;
+        -webkit-transform: rotate3d(0,0,1,-360deg);
+        transform: rotate3d(0,0,1,-360deg)
+    }
+}
+
+/* 住建委核验码 */
+.zhujianwei-code {
+    background: #fff;
+    padding: 30PX 0;
+
+    // 平台核验--通过
+    .platform-check-pass{
+        padding:20PX 0;
+        font-size: 14PX;
+        color: #333;
+        width: 100%;
+        overflow: hidden;
+        //icon
+        .official-icon{
+            float: left;
+            .icon-code {
+                width: 77PX;
+                height: 18PX;
+            }
+        }
+        //文案
+        .item-desc{
+            float: left;
+            height: 18PX;
+            line-height: 19PX;
+            margin-left: 20PX;
+        }
+
+    }
+
+    // 官方核验
+    .official-check{
+        //通过
+        .pass{
+            // 图标
+            .official-check-icon {
+                float: left;
+                display: block;
+                margin-right: 15PX;
+                margin-top: 5PX;
+                width: 77PX;
+                height: 18PX;
+                background: url('https://pic6.58cdn.com.cn/nowater/fangfe/n_v296cea6e3124d4719b007ae4493f30b12.png');
+            }
+
+            // 详情
+            .detail {
+                width: 612PX;
+                float: left;
+                font-size: 14PX;
+                color: #555;
+                line-height: 30PX;
+
+                // 核验码
+                .code-wrap{
+                    position: relative;
+                    cursor: pointer;
+        
+                    // 二维码
+                    .qrcode-popover{
+                        display: none;
+                        position: absolute;
+                        right: -151PX;
+                        bottom: -75PX;
+                        border: 1PX solid #D2D2D2;
+                        background-color: #fff;
+                        text-align: center;
+                        padding: 18PX 18PX 12PX;
+        
+                        img {
+                            width: 100PX;
+                            height: 100PX;
+                        }
+        
+                        p{
+                            height: 20PX;
+                            line-height: 20PX;
+                            margin-top: 10PX;
+                            font-size: 12PX;
+                            color: #666;
+                        }
+        
+                        .r_jiao{
+                            width: 21PX;
+                            height: 17PX;
+                            top: 65PX;
+                            left: -9PX;
+                            background-position: -1680PX 0;
+                            background-image: url(//img.58cdn.com.cn/ui8/house/detail/images/zufang-detail-icon@2x.png);
+                            background-size: auto 80PX;
+                            position: absolute;
+                            display: inline-block;
+                            transform: rotate(-90deg);
+                            margin-right: 30PX;
+                        }
+        
+                    } 
+                }
+                // 核验码滑动
+                .code-wrap:hover{
+                    .qrcode-popover{
+                        display: block;
+                    }
+                }          
+            }
+        }
+
+        //未通过
+        .no-pass{
+            .official-check-icon{
+                float: left;
+                display: block;
+                margin-right: 15PX;
+                margin-top: 5PX;
+                width: 77PX;
+                height: 18PX;
+                background: url(//pic6.58cdn.com.cn/nowater/fangfe/n_v24a366bd1f0854fc1a4c5e0619c352359.png) no-repeat;
+                background-size: contain;
+            }
+            // 详情
+            .detail {
+                width: 612PX;
+                float: left;
+                font-size: 14PX;
+                color: #555;
+                line-height: 30PX;   
+            }
+        }
+
+    }
+
+    // 各种备案
+    .record-wrap{
+        .pass,.no-pass{
+            .code-item {
+                width: 100%;
+                margin-bottom: 16PX;
+    
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                
+                .code-pic, .code-label {
+                    display: inline-block;
+                    vertical-align:top;
+                }
+    
+                .code-pic {
+                    width: 72PX;
+                    height: 18PX;
+                    margin-right: 17PX;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+    
+                    &.jigou {
+                        background-image: url(//pic1.58cdn.com.cn/nowater/fangfe/n_v2ad1355debf5f4267aaf1612cff6d22ea.png);
+    
+                        &.no {
+                            background-image: url(//pic4.58cdn.com.cn/nowater/fangfe/n_v2831b4535ae594735be9d8a0fcda80955.png);
+                        }
+                    }
+    
+                    &.congye {
+                        background-image: url(//pic5.58cdn.com.cn/nowater/fangfe/n_v2dd0ae7503aba44dc86a3bfa781144025.png);
+    
+                        &.no {
+                            background-image: url(//pic4.58cdn.com.cn/nowater/fangfe/n_v242675c21064d4594972cebcaf931bdf8.png);
+                        }
+                    }
+    
+                    &.house {
+                        background-image: url(//pic3.58cdn.com.cn/nowater/fangfe/n_v2d38ecdb87acd4000bdd5fc4cf35b4872.png);
+    
+                        &.no {
+                            background-image: url(//pic1.58cdn.com.cn/nowater/fangfe/n_v2216f787efcd04b41af5b444c91308911.png);
+                        }
+                    }
+                }
+    
+                .code-label {
+                    font-size: 14PX;
+    
+                    .title {
+                        color: rgba(51, 51, 51, 1);
+                        font-family: 'PingFangSC-Medium' !important;
+                        line-height: 18PX;
+                    }
+    
+                    .tips {
+                        color: rgba(67, 71, 77, 1);
+                        font-family: PingFangSC-Regular !important;
+                        line-height: 18PX;
+                        margin-top: 6PX;
+                        position: relative;
+                        width: fit-content;
+    
+                        // 二维码
+                        .qrcode-popover{
+                            display: none;
+                            position: absolute;
+                            right: -151PX;
+                            bottom: -75PX;
+                            border: 1PX solid #D2D2D2;
+                            background-color: #fff;
+                            text-align: center;
+                            padding: 18PX 18PX 12PX;
+                            z-index: 2;
+                            img {
+                                width: 100PX;
+                                height: 100PX;
+                            }
+            
+                            p{
+                                height: 20PX;
+                                line-height: 20PX;
+                                margin-top: 10PX;
+                                font-size: 12PX;
+                                color: #666;
+                            }
+            
+                            .r_jiao{
+                                width: 21PX;
+                                height: 17PX;
+                                top: 65PX;
+                                left: -9PX;
+                                background-position: -1680PX 0;
+                                background-image: url(//img.58cdn.com.cn/ui8/house/detail/images/zufang-detail-icon@2x.png);
+                                background-size: auto 80PX;
+                                position: absolute;
+                                display: inline-block;
+                                transform: rotate(-90deg);
+                                margin-right: 30PX;
+                            }
+            
+                        } 
+    
+                        span.active{
+                            color: #257AC0;
+                        }
+                    }
+    
+                    .tips:hover{
+                        .qrcode-popover{
+                            display: block;
+                        }
+                    }  
+                }
+            }
+        }
+    }
+}

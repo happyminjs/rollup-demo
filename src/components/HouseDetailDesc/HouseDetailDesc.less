@@ -1,0 +1,1041 @@
+.house-detail-desc{
+    width: 100%;
+    border-top: 1PX solid #f3f3f3;
+    overflow: hidden;
+
+    .f18 {
+        font-size: 18PX;
+    }
+
+    .c_333 {
+        color: #333;
+    }
+
+    .f14 {
+        font-size: 14PX;
+    }
+
+    .f24 {
+        font-size: 24PX;
+    }
+
+    .c_555 {
+        color: #555;
+    }
+
+    .c_888 {
+        color: #888;
+    }
+
+    .pr {
+        position: relative;
+    }
+
+    .f14 {
+        font-size: 14PX;
+    }
+
+    .lh50 {
+        line-height: 50PX;
+    }
+
+    //详情左部分（房源详情）
+    .main-detail-info {
+        width: 706PX;
+        overflow: hidden;
+        float: left;
+
+        //小区详情、房源详情nav
+        .nav-detail-bar {
+            width: 100%;
+            height: 24PX;
+            margin-top: 39PX;
+            margin-bottom: 34PX;
+            overflow: hidden;
+            font-size: 18PX;
+            
+
+            li {
+                float: left;
+                margin-right: 57PX;
+                color: #888;
+                cursor: pointer;
+
+                a{
+                    color: #888;
+                }
+
+                a:hover{
+                    color: #333;
+                }
+            }
+
+            li.on {
+                color: #333;
+
+                a{
+                    color: #333;
+                }
+            }
+        }
+        .house-warn {
+            font-family: "PingFangSC-Regular";
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: rgba(255, 46, 46, 1);
+            text-align: left;
+            background-color: rgba(255, 236, 236, 1);
+            padding: 10px;
+            margin-bottom: 10px;
+            margin-top: -10px;
+            i {
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                background-image: url(https://pic4.58cdn.com.cn/nowater/fangfe/n_v2a983b273689144cb9c9945cfce6998e7.png);
+                background-repeat: no-repeat;
+                background-size: 16px 16px;
+                vertical-align: middle;
+                margin-top: -2px;
+                margin-right: 2px;
+            }
+        }
+
+        //提示tip report
+        .report-text {
+            width: 100%;
+            margin-top: 3PX;
+            height: 44PX;
+            line-height: 44PX;
+            background: #FFFAF8;
+            padding: 0 7PX;
+            font-size: 12PX;
+            color: #555;
+
+            .color {
+                color: #FF552E;
+            }
+        }
+
+        .fang-detail{
+            .conf-cate{
+                display: flex;
+                align-items: center;
+                margin: 30PX 0;
+
+                .title{
+                    width: 95PX;
+                    font-size: 16PX;
+                    color: #333;
+                    line-height: 30PX;
+                }
+
+                .items{
+                    .house-disposal {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin: 0PX;
+            
+                        li {
+                            display: flex;
+                            flex-flow: column;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 14PX;
+                            color: #555;
+                            width: 75PX;
+                            line-height: 18PX;
+                            margin: 0PX;
+                            padding: 0PX;
+                        }
+
+                        .icon {
+                            position: initial;
+                            background: url(//pic8.58cdn.com.cn/nowater/fangfe/n_v2432cb783174d485286f9388643d966ff.png) no-repeat center;
+                            background-size: auto 80PX;
+                            width: 40PX;
+                            height: 40PX;
+                        }
+            
+                        .bed i {
+                            background-position: -299PX 0;
+                        }
+            
+                        .chest i {
+                            background-position: -1870PX 0;
+                        }
+            
+                        .sofa i {
+                            background-position: -924PX 5PX;
+                        }
+            
+                        .telev i {
+                            background-position: -343PX 0;
+                        }
+            
+                        .icebox i {
+                            background-position: -219PX 0;
+                        }
+            
+                        .washer i {
+                            background-position: -1252PX 0;
+                        }
+            
+                        .air-condition i {
+                            background-position: -573PX 0;
+                        }
+            
+                        .water-heater i {
+                            background-position: -854PX 0;
+                        }
+            
+                        .broadband i {
+                            background-position: -612PX 0;
+                        }
+            
+                        .central-heater i {
+                            width: 35PX;
+                            background-position: -826PX 0;
+                        }
+            
+                        .fuel-gas i {
+                            background-position: -1973PX 0;
+                        }
+            
+                        .balcony i {
+                            background-position: -2011PX 0;
+                        }
+            
+                        .toilet i {
+                            background-position: -2128PX 0;
+                        }
+            
+                        .cooker i {
+                            background-position: -2597PX -5PX;
+                        }
+            
+                        .smart-lock i {
+                            background-position: -2637PX -5PX;
+                        }
+            
+                        .smoke-exhaust i {
+                            background-position: -2556PX -5PX;
+                        }
+            
+                        .no-config {
+                            color: #999;
+
+                            i {
+                                background-position: -2676PX -5PX;
+                            }
+                        }
+                       
+                    }
+                }
+            }
+        }
+
+        //房屋配置(图标)
+         //房屋配置(图标)
+         .house-disposal {
+            width: 100%;
+            overflow: hidden;
+            margin-top: 40PX;
+            margin-bottom: 27PX;
+
+            li {
+                font-size: 14PX;
+                color: #555;
+                float: left;
+                position: relative;
+                width: 117PX;
+                line-height: 18PX;
+                text-align: center;
+                padding-top: 39PX;
+                margin-bottom: 27PX;
+
+                i {
+                    top: 0;
+                }
+            }
+
+            .bed i {
+                width: 35PX;
+                height: 29PX;
+                background-position: -301PX 0;
+                left: 42PX;
+            }
+
+            .chest i {
+                width: 25PX;
+                height: 31PX;
+                background-position: -1878PX 0;
+                left: 47PX;
+            }
+
+            .sofa i {
+                width: 34PX;
+                height: 22PX;
+                background-position: -926PX 0;
+                left: 42PX;
+            }
+
+            .telev i {
+                width: 33PX;
+                height: 30PX;
+                background-position: -346PX 0;
+                width: 33PX;
+                left: 42PX;
+            }
+
+            .icebox i {
+                width: 25PX;
+                height: 31PX;
+                background-position: -226PX 0;
+                left: 46PX;
+            }
+
+            .washer i {
+                width: 25PX;
+                height: 30PX;
+                background-position: -1259PX 0;
+                left: 46PX;
+            }
+
+            .air-condition i {
+                width: 29PX;
+                height: 29PX;
+                background-position: -580PX 0;
+                left: 46PX;
+            }
+
+            .water-heater i {
+                width: 28PX;
+                height: 30PX;
+                background-position: -861PX 0;
+                left: 46PX;
+            }
+
+            .broadband i {
+                width: 28PX;
+                height: 26PX;
+                background-position: -618PX 0;
+                left: 46PX;
+            }
+
+            .central-heater i {
+                width: 16PX;
+                height: 30PX;
+                background-position: -836PX 0;
+                left: 48PX;
+            }
+
+            .fuel-gas i {
+                width: 26PX;
+                height: 31PX;
+                background-position: -1980PX 0;
+                left: 45PX;
+            }
+
+            .balcony i {
+                width: 31PX;
+                height: 30PX;
+                background-position: -2016PX 0;
+                left: 44PX;
+            }
+
+            .toilet i {
+                width: 31PX;
+                height: 25PX;
+                background-position: -2133PX 0;
+                left: 44PX;
+            }
+
+            .cooker i {
+                width: 40PX;
+                height: 40PX;
+                background-position: -2597PX -5PX;
+                left: 41PX;
+            }
+
+            .smart-lock i {
+                width: 40PX;
+                height: 40PX;
+                background-position: -2637PX -5PX;
+                left: 38PX;
+            }
+
+            .smoke-exhaust i {
+                width: 40PX;
+                height: 40PX;
+                background-position: -2556PX -5PX;
+                left: 38PX;
+            }
+
+            .no-config {
+                color: #999;
+
+                i {
+                    width: 40PX;
+                    height: 40PX;
+                    background-position: -2676PX -5PX;
+                    left: 38PX;
+                }
+            }
+
+
+            .icon {
+                display: inline-block;
+                position: absolute;
+                width: 16PX;
+                height: 30PX;
+                background: url(//pic8.58cdn.com.cn/nowater/fangfe/n_v2432cb783174d485286f9388643d966ff.png) no-repeat center;
+                background-size: auto 80PX;
+            }
+        }
+
+        //房屋亮点、描述
+        .house-word-introduce {
+            margin-bottom: 31PX;
+            font-size: 16PX;
+            color: #555;
+
+            .introduce-item{
+                li {
+                    width: 100%;
+                    margin-bottom: 20PX;
+
+                    .a1 {
+                        width: 93PX;
+                        float: left;
+                        font-size: 16PX;
+                        color: #333;
+                        line-height: 30PX;
+                    }
+
+                    .a2 {
+                        width: 612PX;
+                        float: left;
+                        font-size: 14PX;
+                        color: #555;
+                        line-height: 30PX;
+
+                        em.fy {
+                            border-bottom: 1PX solid #333;
+                        }
+
+                        em {
+                            margin-right: 30PX;
+                            position: relative;
+
+
+                            i.wrap{
+                                position: absolute;
+                                top: 20PX;
+                                left: 10PX;
+                                width: 300PX;
+                                display: none;
+                                background: #fff;
+                                z-index: 9;
+                            }
+
+                            i.text{
+                                border: 1PX solid #ddd;
+                                padding: 0 5PX;
+                                line-height: 10PX;
+                                padding: 5PX;
+                                line-height: 16PX;
+                                font-size: 10PX;
+                                border-radius: 3PX;
+                                display: inline-block;
+                            }
+                        }
+                        em.fy:hover{
+                            cursor: pointer;
+                            i.wrap{
+                                display: block;
+                            }
+                        }
+
+                        .code-wrap{
+                            position: relative;
+                            cursor: pointer;
+
+                            .num{
+                                color: #0091d7;
+                            }
+
+                            // 哈尔滨核验码-二维码
+                            .qrcode-popover{
+                                display: none;
+                                position: absolute;
+                                right: -151PX;
+                                bottom: -75PX;
+                                border: 1PX solid #D2D2D2;
+                                background-color: #fff;
+                                text-align: center;
+                                padding: 18PX 18PX 12PX;
+
+                                img {
+                                    width: 100PX;
+                                    height: 100PX;
+                                }
+
+                                p{
+                                    height: 20PX;
+                                    line-height: 20PX;
+                                    margin-top: 10PX;
+                                    font-size: 12PX;
+                                    color: #666;
+                                }
+
+                                .r_jiao{
+                                    width: 21PX;
+                                    height: 17PX;
+                                    top: 65PX;
+                                    left: -9PX;
+                                    background-position: -1680PX 0;
+                                    background-image: url(//img.58cdn.com.cn/ui8/house/detail/images/zufang-detail-icon@2x.png);
+                                    background-size: auto 80PX;
+                                    position: absolute;
+                                    display: inline-block;
+                                    transform: rotate(-90deg);
+                                }
+
+                            } 
+                        }
+
+                        .code-wrap:hover{
+                            .qrcode-popover{
+                                display: block;
+                            }
+                        }
+                    }
+
+                    .officialCheck{
+                        display: inline-block;
+                        margin-top: 10PX;
+                        margin-top: 5PX;
+                        width: 77PX;
+                        height: 18PX;
+                        background: url('https://pic6.58cdn.com.cn/nowater/fangfe/n_v296cea6e3124d4719b007ae4493f30b12.png');
+
+                    }
+                }
+
+                // 清除浮动
+                li:after{
+                    content: "";
+                    display: block;
+                    height: 0;
+                    clear:both;
+                    visibility: hidden;
+                }
+            }
+        }
+
+        //图集
+        .house-pic-list{
+          width: 100%;
+          overflow: hidden;
+
+          li.even {
+              margin-right: 10PX;
+          }
+
+          li.hide {
+               display: none;
+           }
+
+          .pic {
+              float: left;
+              cursor: pointer;
+              width: 348PX;
+              height: 261PX;
+              margin-bottom: 10PX;
+
+              img {
+                  background: #fff;
+                  -moz-opacity: 1;
+                  opacity: 1;
+                  width: 100%;
+                  height: 100%;
+                  border: 0;
+              }
+
+              img:hover {
+                    opacity: 0.8;
+                }
+          }
+
+          .view-more-pic {
+              width: 704PX;
+              height: 46PX;
+              float: left;
+          }
+
+          .view-more {
+              height: 46PX;
+              line-height: 46PX;
+              text-align: center;
+              border: 1PX solid #e0e0e0;
+
+              a {
+                  position: relative;
+                  width: 100%;
+                  height: 46PX;
+                  line-height: 46PX;
+                  font-size: 14PX;
+                  display: block;
+                  color: #555;
+                  background: #f5f5f5;
+              }
+          }
+
+          .view-more:hover {
+            a {
+                background: #e0e0e0;
+            }
+        }
+
+        }
+
+        //小区简介
+        .district-info-header {
+            margin-top: 60PX;
+            margin-bottom: 35PX;
+            height: 70PX;
+
+            .district-pic {
+                width: 70PX;
+                height: 70PX;
+                overflow: hidden;
+            }
+
+            .district-decs {
+                margin-left: 15PX;
+                margin-top: -3PX;
+                a{
+                    text-decoration: none;
+                }
+
+                .icon {
+                    margin-bottom: -2PX;
+                    width: 10PX;
+                    height: 13PX;
+                    position: relative;
+                    background-position: -1963PX 0;
+                }
+
+                .addr {
+                    margin-top: 7PX;
+                    margin-bottom: 6PX;
+                }
+
+                .trend {
+                    padding-left: 0PX;
+                    color: #0091d7;
+
+                    i {
+                        width: 18PX;
+                        height: 10PX;
+                        background-position: 0 0;
+                        left: 0;
+                    }
+                }
+
+                .trend:hover {
+                    color: #ff552e;
+                }
+            }
+
+            .fl {
+                float: left;
+            }
+
+            .district-online-sale{
+                color: #888;
+                font-size: 14PX;
+
+                a {
+                    display: inline-block;
+                    margin-right: 8PX;
+                    width: 80PX;
+                    height: 90PX;
+                    color: #888;
+
+                    em {
+                        display: block;
+                        text-align: center;
+                        // line-height: 50PX;
+                        // font-size: 24PX;
+                    }
+                }
+
+                a:hover{
+                    background: #f8f8f8;
+                }
+            }
+
+            .fr {
+                float: right;
+            }
+        }
+
+        //小区简介具体信息
+        .district-info-list{
+            border-top: 1PX solid #f8f8f8;
+            padding: 12PX 0 24PX 0;
+            line-height: 28PX;
+            font-size: 14PX;
+            color: #333;
+
+            li {
+                list-style: none;
+
+                span {
+                    display: inline-block;
+                    margin-right: 15PX;
+                    // color: #333;
+                }
+            }
+        }
+
+        //地图
+        #dtjt_wrap {
+            width: 706PX;
+
+            #dtjt_title {
+                height: 28PX;
+                line-height: 28PX;
+                margin-bottom: 12PX;
+            }
+
+            span {
+                display: inline-block;
+                font-size: 14PX;
+                color: #888;
+                cursor: pointer;
+            }
+
+            span:hover {
+                color: #333;
+            }
+
+            span.active {
+                color: #333;
+            }
+
+            #baidu_map {
+                width: 706PX;
+                position: relative;
+                height: 320PX;
+                overflow: hidden;
+
+                #dtjt_info {
+                    height: 320PX;
+                    position: relative;
+                    width: 706PX;
+
+                    #map {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        z-index: 0;
+                    }
+
+                    .map_tab {
+                        right: 20PX;
+                        position: absolute;
+                        top: 20PX;
+                        width: 90PX;
+                        border: 1PX solid #d2d2d2;
+                        display: none;
+                        font-size: 12PX;
+                        background: #fff;
+                        padding-bottom: 8PX;
+
+                        dl {
+                            cursor: pointer;
+                            height: 28PX;
+
+                            dt.item-dt {
+                                height: 15PX;
+                                padding: 7PX 0 7PX 10PX;
+                                position: relative;
+
+                                label {
+                                    display: block;
+                                    overflow: hidden;
+                                    cursor: default;
+
+                                    input {
+                                        width: 15PX;
+                                        height: 15PX;
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                            dt:hover{
+                                background: #f8f8f8;
+                            }
+                        }
+
+                        dl.hide {
+                            display:none;
+                        }
+
+                        .zbpz-title {
+                            line-height: 28PX;
+                            padding: 7PX 0 0 10PX;
+                        }
+                    }
+                }
+            }
+
+            .map{
+                display: none;
+            }
+            .active{
+                display: inline-block;
+            }
+
+            .view-more-detailmap {
+                width: 704PX;
+                height: 46PX;
+                margin-top: 10PX;
+                border: 1PX solid #e0e0e0;
+
+                a {
+                    position: relative;
+                    width: 100%;
+                    height: 46PX;
+                    line-height: 46PX;
+                    font-size: 14PX;
+                    display: block;
+                    color: #555;
+                    background: #f5f5f5;
+                    text-align: center;
+                }
+
+                .icon {
+                    margin-bottom: -4PX;
+                    width: 10PX;
+                    height: 13PX;
+                    position: absolute;
+                    top: 18PX;
+                    background-position: -1963PX 2PX;
+                }
+            }
+
+            .view-more-detailmap:hover {
+                a {
+                    background: #e0e0e0;
+                }
+            }
+
+        }
+
+    }
+}
+.layout_wrap {
+    position: absolute;
+    width: 32PX;
+    height: 38PX;
+    background: url(//pages.anjukestatic.com/usersite/site/img/map/icon-sp-map.png) center center no-repeat;
+
+    &.ftr_restaurant {
+        background-position: -128PX -38PX;
+        &:hover {
+            background-position: 0PX -114PX;
+        }
+    }
+    
+    &.ftr_bus {
+        background-position: 0PX 0PX;
+        &:hover {
+            background-position: -64PX -114PX;
+        }
+    }
+
+    &.ftr_subway {
+        background-position: -128PX -76PX;
+        &:hover {
+            background-position: -32PX -114PX;
+        }
+    }
+
+    &.ftr_bank, &.ftr_ATM {
+        background-position: 0PX -38PX;
+    }
+
+    &.ftr_bank:hover, &.ftr_ATM:hover {
+        background-position: -96PX -76PX;
+    }
+
+    &.ftr_mall, &.ftr_supermarkert {
+        background-position: -64PX 0PX;
+    }
+
+    &.ftr_mall:hover, &.ftr_supermarkert:hover {
+        background-position: -128PX 0PX;
+    }
+
+    &.ftr_school {
+        background-position: -32PX -38PX;
+        &:hover {
+            background-position: -64PX -76PX;
+        }
+    }
+
+    &.ftr_hospital {
+        background-position: -64PX -38PX;
+        &:hover {
+            background-position: 0PX -76PX;
+        }
+    }
+
+    &:hover {
+        .layout_detail {
+            display: block;
+        }
+    }
+
+    .layout_detail {
+        position: absolute;
+        bottom: 48PX;
+        left: -12PX;
+        font-size: 12PX;
+        color: #333;
+        background: #fff;
+        border: 1PX solid #f0f0f0;
+        border-radius: 4PX;
+        padding: 10PX 15PX 10PX;
+        width: 230PX;
+        z-index: 10;
+        box-shadow: 4PX 4PX 4PX #999;
+
+        .layout_title {
+            font-size: 14PX;
+            color: #f60;
+            width: 175PX;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .distance_address {
+            font-size: 12PX;
+            color: #333;
+            width: 230PX;
+            line-height: 20PX;
+            margin-top: 5PX;
+            white-space: normal;
+        }
+
+        .distance_tag {
+            position: absolute;
+            right: 15PX;
+            top: 12PX;
+            height: 15PX;
+
+            i {
+                margin-right: 4PX;
+                display: inline-block;
+                vertical-align: -1PX;
+                width: 12PX;
+                height: 12PX;
+                background: url(//pages.anjukestatic.com/usersite/site/img/map/icon-sp-map.png) center center no-repeat;
+                background-position: -160PX -118PX;
+            }
+
+        }
+
+        .layout_detail_down {
+            position: absolute;
+            bottom: -11PX;
+            left: 19PX;
+            width: 15PX;
+            height: 11PX;
+            background: url(//pages.anjukestatic.com/usersite/site/img/map/icon-sp-map.png) center center no-repeat;
+            background-position: -160PX -107PX;
+        }
+
+    }
+
+}
+.map_tab_sel {
+    display: block !important;
+    .zbpz-title {
+        display: block;
+
+        .icon {
+            position: relative;
+            background-position: -1345PX 4PX;
+            height: 18PX;
+            margin-bottom: -2PX;
+            width: 22PX;
+        }
+    }
+    dl {
+        cursor: pointer;
+        height: 28PX;
+    }
+}
+.map_tab {
+    right: 20PX;
+    position: absolute;
+    top: 20PX;
+    width: 90PX;
+    border: 1PX solid #d2d2d2;
+    font-size: 12PX;
+    background: #fff;
+    padding-bottom: 8PX;
+
+    dt.on {
+        background: #fff;
+    }
+
+    dt.over {
+        background: #f8f8f8;
+    }
+
+    dt.item-dt {
+        height: 15PX;
+        padding: 7PX 0 7PX 10PX;
+        position: relative;
+
+        label {
+            display: block;
+            overflow: hidden;
+        }
+
+        input {
+            width: 15PX;
+            height: 15PX;
+            margin: 0;
+        }
+
+        span {
+            visibility: hidden;
+        }
+    }
+}
+.map_tab .dticon0, .map_tab .dticon1, .map_tab .dticon2, .map_tab .dticon3, .map_tab .dticon4, .map_tab .dticon5, .map_tab .dticon6 {
+    background: url(//img.58cdn.com.cn/ui7/fang/detail/img/dtspri.gif) no-repeat 0 0;
+    width: 11PX;
+    height: 15PX;
+}
+.map_tab dt.item-dt div.dt {
+    font-size: 12PX;
+    height: 15PX;
+    line-height: 15PX;
+    display: inline-block;
+    color:#888;
+}
+#soso_map {
+    width: 706PX;
+    height: 320PX;
+    position: relative;
+    overflow: hidden;
+}
